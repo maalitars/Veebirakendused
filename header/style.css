@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
   background-color: orange;
 }
@@ -16,4 +17,11 @@ navigation_bar{
 }
 button{
   color: white;
+=======
+body {    
+    margin: 50 !important;
+    padding: 50 !important;
+    box-sizing: border-box;
+	  background-color: #000000;
+>>>>>>> d05811a6b72a02089bd926526719ec25892c52ec
 }
