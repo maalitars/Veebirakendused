@@ -63,10 +63,10 @@ v {
 
 }
 
-.header {
+header {
   padding: 10em;
 	text-align: left;
-	background-color: #fff;
+	background-color: #000;
 }
 
 .footer {
