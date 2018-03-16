@@ -5,9 +5,11 @@
         <title>SeenItAll</title>
     </head>
     <body>
+      <div class="pic">
+        <img class="pic"src="bat.jpg" width="500" height="300">
+      </div>
 			<div class="boxed">
-          <img id="pic"src="bat.jpg" width="550" height="300">
-  			</div>
+
 				<p>SISENE FILMIMAAILMA<p>
 				<input type="text" name="username" required="required"  class="userbox" /> <br/>
 				<input type="password" name="password" required="required"  class="userbox" id="pass" /> <br/>
