@@ -15,7 +15,9 @@
 				<button class= "language" type="button" onclick="alert('Hello world!')" id="en"></button>
 				<button class= "language" type="button" onclick="alert('Hello world!')" id="et"></button>
 				<button class= "Fblogin" type="button" onclick="alert('Hello world!')"><v>LOGI SISSE FACEBOOKIGA<v></button>
-				<button class= "login" type="button" onclick="alert('Hello world!')"><v>LOGI SISSE<v></button>
+				<button class= "login" type="button">
+        <a href="/veebirakendused/pieces/esileht.php">><v>LOGI SISSE<v></button>
+
 				<button class= "login" id="reg" type="button" onclick="alert('Hello world!')"><v>REGISTREERU<v></button>
 
 			</div>

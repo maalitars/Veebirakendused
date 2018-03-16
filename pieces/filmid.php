@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php include 'header.php'; ?>
-<p>ESILEHT <p>
+<p>FILMID <p>
 <?php include 'footer.php'; ?>
 </body>
 </php>

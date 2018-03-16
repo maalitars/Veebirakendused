@@ -11,10 +11,10 @@
         <div class="container">
             <logo id="logo">SEENITALL</logo>
           <nav>
-          <li><a href="#">ESILEHT</a></li>
-          <li><a href="#">FILMID</a></li>
-          <li><a href="#">MINU ANDMED</a></li>
-          <li><a href="#">LOGI VÄLJA</a></li>
+          $esileht = <li><a href="/veebirakendused/pieces/esileht.php">ESILEHT</a></li>
+          <li><a href="/veebirakendused/pieces/filmid.php">FILMID</a></li>
+          <li><a href="/veebirakendused/pieces/andmed.php">MINU ANDMED</a></li>
+          <li><a href="/veebirakendused/index.php">LOGI VÄLJA</a></li>
       </nav>
       <div class= "line">
         </div>
