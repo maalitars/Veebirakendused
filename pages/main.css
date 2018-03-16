@@ -3,7 +3,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: right;
 	background-attachment: fixed;
-	background-color: #000;
+	background-color: #fff;
 	background-size: cover;
 	margin: 0
 }
@@ -35,18 +35,23 @@ v {
   color:#fff;
 }
 
+.buttonsec{
+	float:right;
+	margin: 50% 50%
+}
 
 .boxed{
     background-color:#101010;
-    width: 150px;
-    height: 300px;
-    padding: 100px;
-    margin: 150px;
+		position: relative;
+    padding: 10%;
+    margin: 10%;
 }
 
 .pic{
-	float: right;
-	margin: 5% 10%; 
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
 }
 
 .userbox{
