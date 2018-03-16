@@ -47,6 +47,7 @@ v {
 	position: relative;
 	margin-right: 300px;
 }
+
 .userbox{
   background-color:#797676;
   position: absolute;
@@ -116,4 +117,11 @@ v {
 
 #en {
 	background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/United-Kingdom-icon.png");
+}
+
+#google {
+	float: right;
+	margin: 10% 20%;
+	height: 400px;
+	width: 600px;
 }
