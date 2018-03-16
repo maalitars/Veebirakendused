@@ -1,6 +1,5 @@
 body {
 	font-family: Trebuchet;
-  background-image: url("bat.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-attachment: fixed;
@@ -11,13 +10,12 @@ body {
 
 
 .bgsection {
-  background-image: url("https://ufile.io/h69sc");
-  background-position: right;
-  position: absolute;
-  top: 200px;
+  padding-top: 20px;
+	float: right;
   background-size: 100%;
 
 }
+
 a {
   font-size: 40px;
 	color: #000;
@@ -45,7 +43,10 @@ v {
     padding: 100px;
     margin: 150px;
 }
-
+#pic{
+	position: relative;
+	margin-right: 300px;
+}
 .userbox{
   background-color:#797676;
   position: absolute;
@@ -61,18 +62,6 @@ v {
   top:130px;
   left: 10px;
 
-}
-
-header {
-  padding: 10em;
-	text-align: left;
-	background-color: #000;
-}
-
-.footer {
-	padding: 1em;
-	text-align: left;
-	background-color: #fff;
 }
 
 .title {

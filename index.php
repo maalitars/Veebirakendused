@@ -6,6 +6,8 @@
     </head>
     <body>
 			<div class="boxed">
+          <img id="pic"src="bat.jpg" width="550" height="300">
+  			</div>
 				<p>SISENE FILMIMAAILMA<p>
 				<input type="text" name="username" required="required"  class="userbox" /> <br/>
 				<input type="password" name="password" required="required"  class="userbox" id="pass" /> <br/>
@@ -16,9 +18,6 @@
 				<button class= "login" type="button" onclick="alert('Hello world!')"><v>LOGI SISSE<v></button>
 				<button class= "login" id="reg" type="button" onclick="alert('Hello world!')"><v>REGISTREERU<v></button>
 
-			</div>
-			<background class="bgsection">
-			<div class="bgsection">
 			</div>
     </body>
 </html
