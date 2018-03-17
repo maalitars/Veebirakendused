@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 $fb = new Facebook\Facebook([
   'app_id' => '2015671711981238',

@@ -1,3 +1,6 @@
+<?php
+require __DIR__ . '/../init.php';
+?>
 <!DOCTYPE html>
 <php>
 <link href="main2.css" rel="stylesheet" type="text/css"/>
@@ -7,6 +10,6 @@
       <title>SeenItAll</title>
 </head>
 <body>
-<p>ANDMED<p>
+<p><?php echo $lang['minu_andmed'] ?><p>
 </body>
 </php>

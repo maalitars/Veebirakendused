@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../init.php';
+?>
+
 <!DOCTYPE html>
 <php>
 
@@ -12,6 +16,6 @@
 </head>
 <body>
     <div id="google"></div>
-<p>ESILEHT <p>
+<p><?php echo $lang['esileht'] ?><p>
 </body>
 </php>

@@ -7,15 +7,15 @@
     <body>
 <div class="login">
     <form class="form">
-      <text>sisene filmimaailma</>
-      <input type="text" placeholder="kasutajanimi"/>
-      <input type="password" placeholder="salasõna"/>
-      <button> <a href="/veebirakendused/pages/esileht.php">logi sisse</button>
-      <button float: "left">registreeru</button>
-      <buttonFB>LOGI SISSE FACEBOOKIGA</buttonFB>
+      <text><?php echo $lang['sisene_filmimaailma']?></>
+      <input type="text" placeholder='<?php echo $lang['kasutajanimi']?>'/>
+      <input type="password" placeholder='<?php echo $lang['salasõna']?>'/>
+      <button> <a href="/veebirakendused/pages/esileht.php"><?php echo $lang['logi_sisse']?></button>
+      <button float: "left"><?php echo $lang['registreeru']?></button>
+      <buttonFB><?php echo $lang['logi_sisse_facebookiga']?></buttonFB>
       <div class= "language">
-        <buttonEN ></buttonEN>
-        <buttonET ></buttonET>
+        	<a href = "?lang=english"><buttonEN ></buttonEN></a>
+          <a href = "?lang=estonian"><buttonET ></buttonET></a>
       </div>
     </form>
   </div>

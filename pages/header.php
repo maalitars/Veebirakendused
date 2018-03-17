@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../init.php';
+?>
+
 <!DOCTYPE html>
 <php>
     <head>
@@ -11,10 +15,10 @@
         <div class="container">
             <logo id="logo">SEENITALL</logo>
           <nav>
-          <li><a href="esileht.php">ESILEHT</a></li>
-          <li><a href="filmid.php">FILMID</a></li>
-          <li><a href="andmed.php">MINU ANDMED</a></li>
-          <li><a href="/veebirakendused/index.php">LOGI VÄLJA</a></li>
+          <li><a href="esileht.php"><?php echo $lang['esileht'] ?></a></li>
+          <li><a href="filmid.php"><?php echo $lang['filmid'] ?></a></li>
+          <li><a href="andmed.php"><?php echo $lang['minu_andmed']?></a></li>
+          <li><a href="/veebirakendused/index.php"><?php echo $lang['logi_välja'] ?></a></li>
       </nav>
       <div class= "line">
         </div>
