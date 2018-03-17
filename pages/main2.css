@@ -42,7 +42,6 @@
   outline: 0;
   background: #f2f2f2;
   width: 100%;
-  border: 3,solid white;
   margin: 10px 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -59,7 +58,7 @@
   color: #fff;
   font-size: 14px;
 
-  transition-delay: :0.3;
+  transition-delay:0.3;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
@@ -74,13 +73,12 @@
   font-family: Courier;
   text-transform: uppercase;
   width: 100%;
-  border: 3;
   padding: 5%;
   margin:auto;
   color: #fff;
   font-size: 14px;
   background-color:#19338F;
-  transition-delay: 0.3;
+  transition-delay:0.3;
   cursor: pointer;
 }
 
