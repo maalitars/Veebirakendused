@@ -11,9 +11,9 @@ require 'init.php';
     <body>
 <div class="login">
     <form class="form">
-      <text><?php echo $lang['sisene_filmimaailma']?></>
-      <input type="text" placeholder='<?php echo $lang['kasutajanimi']?>'/>
-      <input type="password" placeholder='<?php echo $lang['salasõna']?>'/>
+      <text><?php echo $lang['sisene_filmimaailma']?>
+      <input type="text" placeholder='<?php echo $lang['kasutajanimi']?>'>
+      <input type="password" placeholder='<?php echo $lang['salasõna']?>'>
       <button> <a href="pages/esileht.php"><?php echo $lang['logi_sisse']?></button>
       <button><?php echo $lang['registreeru']?></button>
       <div class= "language">
