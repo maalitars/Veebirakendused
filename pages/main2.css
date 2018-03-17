@@ -93,6 +93,7 @@
   float:right;
   background-size: 100%;
   padding: 25px;
+  margin: 10px;
 }
 
 .form buttonEN{
@@ -100,14 +101,14 @@
   float:left;
   background-size: 100%;
   padding: 25px;
-  margin: 10%;
+  margin: 10px;
 }
 
 .language {
     display: ;
   	padding: 20px 20px;
   	margin: 20px 20px;
-    position: fixed;
+    position: relative;
   	border-radius:10px;
   }
 a{
