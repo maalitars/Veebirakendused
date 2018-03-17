@@ -1,12 +1,14 @@
 
 .pic{
+  width: 30%;
   float:right;
-  padding: 10% 10% 0%;
-  margin: 0 0 0;
+  padding: 13% 10% 0%;
+  margin: auto;
 
 }
 
 .login{
+  width: 60%;
   float:left;
   height: 500px;
   width: 360px;
@@ -40,7 +42,7 @@
   outline: 0;
   background: #f2f2f2;
   width: 100%;
-  border: 3;
+  border: 3 solid white;
   margin: 10px 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -51,13 +53,13 @@
   text-transform: uppercase;
   background: #000;
   width: 50%;
-  border: 3;
+  border: 3 solid white;
   padding: 10px;
   float: left;
   color: #fff;
   font-size: 14px;
 
-  transition: all 0.3 ease;
+  transition:0.3;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
@@ -78,7 +80,7 @@
   color: #fff;
   font-size: 14px;
   background-color:#19338F;
-  transition: all 0.3 ease;
+  transition: 0.3;
   cursor: pointer;
 }
 
@@ -116,7 +118,6 @@ p {
   font-size: 25px;
 	color: #fff;
   position: absolute;
-  padding: 50%
   margin: 20px 20px;
   text-align:center;
 }

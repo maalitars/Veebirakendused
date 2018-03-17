@@ -8,6 +8,6 @@
   <body>
     <p>FILMID</p>
   </body>
-      <?php include 'footer.php'; ?>
+  
 
 </php>

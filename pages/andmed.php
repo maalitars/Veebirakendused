@@ -9,5 +9,4 @@
 <body>
 <p>ANDMED<p>
 </body>
-<?php include 'footer.php'; ?>
 </php>

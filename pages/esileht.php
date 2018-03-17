@@ -13,6 +13,5 @@
 <body>
     <div id="google"></div>
 <p>ESILEHT <p>
-<?php include 'footer.php'; ?>
 </body>
 </php>

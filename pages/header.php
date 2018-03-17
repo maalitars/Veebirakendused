@@ -11,9 +11,9 @@
         <div class="container">
             <logo id="logo">SEENITALL</logo>
           <nav>
-          <li><a href="/veebirakendused/pages/esileht.php">ESILEHT</a></li>
-          <li><a href="/veebirakendused/pages/filmid.php">FILMID</a></li>
-          <li><a href="/veebirakendused/pages/andmed.php">MINU ANDMED</a></li>
+          <li><a href="esileht.php">ESILEHT</a></li>
+          <li><a href="filmid.php">FILMID</a></li>
+          <li><a href="andmed.php">MINU ANDMED</a></li>
           <li><a href="/veebirakendused/index.php">LOGI VÄLJA</a></li>
       </nav>
       <div class= "line">
