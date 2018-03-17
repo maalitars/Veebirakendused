@@ -1,3 +1,3 @@
 function change() {
-   document.getElementById("change").onClick = "I'm batman!";
+   document.getElementById("change").style.display='none';
 }

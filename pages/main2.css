@@ -1,0 +1,133 @@
+
+.pic{
+  float:right;
+  padding: 10% 10% 0%;
+  margin: 0 0 0;
+
+}
+
+.login{
+  float:left;
+  height: 500px;
+  width: 360px;
+  padding: 8% 10% 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #1B1B1C;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form text {
+  font-family: Courier;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 0;
+
+}
+.form input {
+  padding-top: 10%;
+  font-family: Courier;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 3;
+  margin: 10px 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: Courier;
+  text-transform: uppercase;
+  background: #000;
+  width: 50%;
+  border: 3;
+  padding: 10px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #1B1B1C;
+}
+.form FB{
+  padding: 20px 20px;
+  margin: 20px 200px;
+  position: relative;
+}
+.form buttonFB{
+  font-family: Courier;
+  text-transform: uppercase;
+  width: 100%;
+  border: 3;
+  padding: 5%;
+  margin:auto;
+  color: #fff;
+  font-size: 14px;
+  background-color:#19338F;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form buttonFB:hover,.form buttonFB:active,.form buttonFB:focus {
+  background: #22228D;
+}
+
+.form buttonET{
+  background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/Estonia-icon.png");
+  float:right;
+  background-size: 100%;
+  padding: 25px;
+}
+
+.form buttonEN{
+  background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/United-Kingdom-icon.png");
+  float:left;
+  background-size: 100%;
+  padding: 25px;
+}
+
+.language {
+  	padding: 20px 20px;
+  	margin: 20px 20px;
+    position: relative;
+  	border-radius:10px;
+  }
+a{
+  color:#fff;
+  text-decoration: none;
+}
+
+p {
+  font-family: Courier;
+  font-size: 25px;
+	color: #fff;
+  position: absolute;
+  padding: 50%
+  margin: 20px 20px;
+  text-align:center;
+}
+body {
+  background: #000;
+  font-family: Courier;
+}
+
+#google {
+	float: right;
+	margin: 10% 20%;
+	height: 400px;
+	width: 600px;
+}
