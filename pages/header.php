@@ -2,7 +2,7 @@
 require __DIR__ . '/../init.php';
 ?>
 
-<!DOCTYPE html>
+<DOCTYPE html>
 <php>
     <head>
       <link href="header.css" rel="stylesheet" type="text/css"/>

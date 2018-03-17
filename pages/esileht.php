@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <php>
 
 <link href="main2.css" rel="stylesheet" type="text/css"/>

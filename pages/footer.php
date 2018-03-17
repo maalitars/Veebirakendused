@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 
 <html>
 <link href="header.css" rel="stylesheet" type="text/css"/>

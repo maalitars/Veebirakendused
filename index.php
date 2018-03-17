@@ -1,3 +1,4 @@
+<DOCTYPE html>
 <?php
 require 'init.php';
 ?>
@@ -16,8 +17,8 @@ require 'init.php';
       <button> <a href="pages/esileht.php"><?php echo $lang['logi_sisse']?></button>
       <button><?php echo $lang['registreeru']?></button>
       <div class= "language">
-        	<a href = "?lang=english"><buttonEN ></buttonEN></a>
-          <a href = "?lang=estonian"><buttonET ></buttonET></a>
+        	<a href = "?lang=english"><buttonEN></buttonEN></a>
+          <a href = "?lang=estonian"><buttonET></buttonET></a>
       </div>
     </form>
   </div>

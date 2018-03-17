@@ -1,7 +1,8 @@
+<DOCTYPE html>
 <?php
 require __DIR__ . '/../init.php';
 ?>
-<!DOCTYPE html>
+
 <php>
 <link href="main2.css" rel="stylesheet" type="text/css"/>
   <head>
