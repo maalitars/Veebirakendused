@@ -1,4 +1,7 @@
-<<html>
+<?php
+require 'init.php';
+?>
+<html>
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
