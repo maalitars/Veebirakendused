@@ -13,9 +13,8 @@ require 'init.php';
       <text><?php echo $lang['sisene_filmimaailma']?></>
       <input type="text" placeholder='<?php echo $lang['kasutajanimi']?>'/>
       <input type="password" placeholder='<?php echo $lang['salasõna']?>'/>
-      <button> <a href="pages/esileht.php"><?php echo $lang['logi_sisse']?></button>
-      <button float: "left"><?php echo $lang['registreeru']?></button>
-      <buttonFB><?php echo $lang['logi_sisse_facebookiga']?></buttonFB>
+      <button> <a href="/veebirakendused/pages/esileht.php"><?php echo $lang['logi_sisse']?></button>
+      <button><?php echo $lang['registreeru']?></button>
       <div class= "language">
         	<a href = "?lang=english"><buttonEN ></buttonEN></a>
           <a href = "?lang=estonian"><buttonET ></buttonET></a>

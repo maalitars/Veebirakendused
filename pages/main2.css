@@ -100,12 +100,14 @@
   float:left;
   background-size: 100%;
   padding: 25px;
+  margin: 10%;
 }
 
 .language {
+    display: ;
   	padding: 20px 20px;
   	margin: 20px 20px;
-    position: relative;
+    position: fixed;
   	border-radius:10px;
   }
 a{
