@@ -18,7 +18,7 @@ require __DIR__ . '/../init.php';
           <li><a href="esileht.php"><?php echo $lang['esileht'] ?></a></li>
           <li><a href="filmid.php"><?php echo $lang['filmid'] ?></a></li>
           <li><a href="andmed.php"><?php echo $lang['minu_andmed']?></a></li>
-          <li><a href="/veebirakendused/index.php"><?php echo $lang['logi_välja'] ?></a></li>
+          <li><a href="../index.php"><?php echo $lang['logi_välja'] ?></a></li>
       </nav>
       <div class= "line">
         </div>
