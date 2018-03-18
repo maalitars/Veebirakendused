@@ -2,7 +2,7 @@
 <?php
 require 'init.php';
 ?>
-<html>
+<html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
@@ -23,6 +23,6 @@ require 'init.php';
     </form>
   </div>
   <div class="pic">
-    <img src="bat.jpg" height="300" width="500">
+    <img src="bat.jpg" alt="bat" height="300" width="500">
   </div>
 </body>
