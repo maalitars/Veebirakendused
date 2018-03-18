@@ -11,7 +11,7 @@ require __DIR__ . '/../init.php';
   </head>
   <body>
     <p><?php echo $lang['filmid'] ?></p>
-    <!-- Control buttons -->
+<!--     Control buttons -->
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>
         <button class="btn" onclick="filterSelection('Drama')">Drama</button>
@@ -37,11 +37,11 @@ require __DIR__ . '/../init.php';
         <div class="filterDiv Drama">Whiplash</div>
     </div>
         <script>
-        filterSelection("all")
+        filterSelection("all");
         function filterSelection(c) {
         var x, i;
         x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
+        if (c === "all") c = "";
         // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
         for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
@@ -55,7 +55,7 @@ require __DIR__ . '/../init.php';
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
+        if (arr1.indexOf(arr2[i]) === -1) {
         element.className += " " + arr2[i];
         }
         }
@@ -86,6 +86,4 @@ require __DIR__ . '/../init.php';
         }
       </script>
   </body>
-
-
 </php>
