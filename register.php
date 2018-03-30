@@ -19,6 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 }
 ?>
+
+<!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega peaks ta andmebaasi
+asjad salvestama, aga ei salvesta.-->
     <form class="form" action="register.php" method="post">
     <div class="text">
         <?php echo 'sisene filmimaailma'?>
@@ -27,13 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     <input type="text" name="lastname" placeholder='<?php echo 'perenimi'?>'>
     <input type="text" name="email" placeholder='<?php echo 'meiliaadress'?>'>
     <input type="password" name="password" placeholder='<?php echo 'salasõna'?>'>
-
+        <!-- type submit näitab, et submitiks selle formi ära-->
         <button class="button" type="submit" name="register"><?php echo "registreeru"?></button>
 
         <button class="button" id="reg" onclick='location.href="index.php"'>
             <?php echo "mine tagasi"?>
         </button>
-        /*miks see ei tööta?*/
 
     </form>
 </body>

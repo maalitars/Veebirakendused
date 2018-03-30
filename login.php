@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <?php
 require 'init.php';
-require 'db.php';
-session_start();
 ?>
 <html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
@@ -21,6 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 }
 ?>
+
+<!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega saama kuhugi, aga eitea kuda teha-->
 <div class="login">
     <form class="form" action="login.php" method="post">
     <div class="text">

@@ -54,7 +54,6 @@ else { // Email doesn't already exist in a database, proceed...
         http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;  
 
         mail( $to, $subject, $message_body );
-
         header("location: profile.php"); 
 
     }

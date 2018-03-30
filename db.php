@@ -1,5 +1,5 @@
 <?php
-/* Database connection settings */
+/* Database connection settings - REaliseerib andmebaasi */
 $host = 'localhost';
 $user = 'root';
 $pass = ''; //pane siia oma DB  pass

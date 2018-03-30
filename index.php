@@ -2,7 +2,7 @@
 <?php
 require 'init.php';
 require 'db.php';
-session_start();
+session_start(); //realiseerib andmebaasi
 ?>
 <html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@ session_start();
         <t><?php echo "Seenitall"?></t>
 </header>
 
-    <body>
+    <body> <!-- Valid kuhu lehele lähed -->
     <div class="frontbutton" onclick='location.href="login.php"'>
         <div class="fronttext">
             <?php echo'Logi sisse filmimaailma'?>
