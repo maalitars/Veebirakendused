@@ -12,6 +12,6 @@
 </head>
 <body>
     <div id="google"></div>
-<p><?php echo $lang['esileht'] ?><p>
+    <p><?php echo $lang['esileht'] ?><p>
 </body>
 </html>
