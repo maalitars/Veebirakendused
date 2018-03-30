@@ -59,7 +59,7 @@ else {
           <h2><?php echo $first_name.' '.$last_name; ?></h2>
           <p><?= $email ?></p>
           
-          <a href="../../../Users/ludvig/Downloads/login-system/logout.php"><button class="button button-block" name="logout"/>Log Out</button></a>
+          <a href="index.php"><button class="button button-block"/>Log Out</button></a>
 
     </div>
     

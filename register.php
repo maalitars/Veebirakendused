@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 }
 ?>
-<form class="form" action="register.php" method="post">
+    <form class="form" action="register.php" method="post">
     <div class="text">
         <?php echo 'sisene filmimaailma'?>
     </div>
@@ -27,12 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     <input type="text" name="lastname" placeholder='<?php echo 'perenimi'?>'>
     <input type="text" name="email" placeholder='<?php echo 'meiliaadress'?>'>
     <input type="password" name="password" placeholder='<?php echo 'salasõna'?>'>
-    <div class ="button">
-        <t type="submit" name="register"><?php echo "registreeru"?></t>
-    </div>
-    <div class ="button" id="reg" onclick='location.href="index.php"'>
-        <t type="submit"><?php echo "mine tagasi"?></t>
-    </div>
 
-</form>
+        <button class="button" type="submit" name="register"><?php echo "registreeru"?></button>
+
+        <button class="button" id="reg" onclick='location.href="index.php"'>
+            <?php echo "mine tagasi"?>
+        </button>
+        /*miks see ei tööta?*/
+
+    </form>
 </body>
