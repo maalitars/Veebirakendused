@@ -1,6 +1,6 @@
-<DOCTYPE html>
-<php>
+<!DOCTYPE html>
 
+<html>
 <link href="main2.css" rel="stylesheet" type="text/css"/>
   <head>
     <?php include 'header.php'; ?>
@@ -14,4 +14,4 @@
     <div id="google"></div>
 <p><?php echo $lang['esileht'] ?><p>
 </body>
-</php>
+</html>

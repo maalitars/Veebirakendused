@@ -3,6 +3,9 @@ require __DIR__ . '/../init.php';
 ?>
 
 <DOCTYPE html>
+    <?php
+    require __DIR__ . '/../init.php';
+    ?>
 <php>
     <head>
       <link href="header.css" rel="stylesheet" type="text/css"/>

@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <?php
 require __DIR__ . '/../init.php';
 ?>
