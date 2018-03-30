@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
 require 'init.php';
+require 'db.php';
+session_start();
 ?>
 <html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
@@ -8,9 +10,21 @@ require 'init.php';
     <head>
         <title>SeenItAll</title>
     </head>
+<header>
+        <t><?php echo "Seenitall"?></t>
+</header>
+
     <body>
-    <div class="login">
-        <?php include "login.php"?>
+    <div class="frontbutton" onclick='location.href="login.php"'>
+        <div class="fronttext">
+            <?php echo'Logi sisse filmimaailma'?>
+        </div>
     </div>
+    <div class="frontbutton" id= "leftbutton" onclick='location.href="register.php"'>
+        <div class="fronttext">
+            <?php echo "Pole kasutajat? Registreeru"?>
+        </div>
+    </div>
+
 </body>
 </html>
