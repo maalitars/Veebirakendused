@@ -6,10 +6,6 @@ session_start();
 <html lang ="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
 <head>
     <title>Viga</title>
 </head>
@@ -24,18 +20,8 @@ session_start();
             header("location: login.php");
         endif;
         ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    </p>
-    <a href="login.php">
-        <span class="button button-block">
-            Mine tagasi
-        </span>
-    </a>
-=======
     </h3>
     <div class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
 </div>
 </body>
 </html>

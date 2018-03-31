@@ -37,20 +37,6 @@ asjad salvestama, aga ei salvesta.-->
     <div class="text">
         <?php echo 'sisene filmimaailma' ?>
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <input type="text" name="firstname" placeholder='<?php echo "eesnimi"?>'>
-    <input type="text" name="lastname" placeholder='<?php echo "perenimi"?>'>
-    <input type="text" name="email" placeholder='<?php echo "meiliaadress"?>'>
-    <input type="password" name="password" placeholder='<?php echo "salasõna"?>'>
-        <!-- type submit näitab, et submitiks selle formi ära-->
-        <button class="button" type="submit" name="register"><?php echo "registreeru"?></button>
-=======
-    =======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
     <input type="text" name="firstname" placeholder='<?php echo 'eesnimi' ?>'>
     <input type="text" name="lastname" placeholder='<?php echo 'perenimi' ?>'>
     <input type="text" name="email" placeholder='<?php echo 'meiliaadress' ?>'>
@@ -58,13 +44,5 @@ asjad salvestama, aga ei salvesta.-->
     <!-- type submit näitab, et submitiks selle formi ära-->
     <button class="button" type="submit" name="register">Registreeru</button>
     <button class="button" id="reg" name="tagasi">Mine tagasi</button>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-
 </form>
 </body>

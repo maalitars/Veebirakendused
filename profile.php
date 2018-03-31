@@ -15,9 +15,6 @@ if ($_SESSION['logged_in'] != 1) {
 }
 ?>
 <!DOCTYPE html>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,11 +50,6 @@ if ($_SESSION['logged_in'] != 1) {
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
-=======
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
 <html>
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,14 +79,6 @@ if ($_SESSION['logged_in'] != 1) {
           <h2><?= $email ?></h2>
 
       <div class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Sisene lehele</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-=======
->>>>>>> bedda6ffa8d7414e143b81b6584e390229535e83
-
     </div>
 </body>
 </html>
