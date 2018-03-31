@@ -1,6 +1,6 @@
 <?php
 /* Realiseerib andmebaasi */
-$host = '46.101.6.112';
+$host = 'localhost';
 $user = 'root';
 $pass = 'ALMVeebirakendus';
 $db = 'accounts';
