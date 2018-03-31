@@ -31,6 +31,12 @@ h3{
 h2{
   color: white;
 }
+
+picbox{
+    box-sizing: border-box;
+    margin: -2%;
+    padding: 0;
+}
 .fronttext{
   box-sizing: border-box;
   color: #fff;
