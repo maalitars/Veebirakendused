@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-require 'init.php';
-require 'db.php';
+    require 'init.php';
+    require 'db.php';
 ?>
 <html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
@@ -12,28 +12,28 @@ require 'db.php';
 <body>
 
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-    if (isset($_POST['login'])) { //user logging in
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (isset($_POST['login'])) { //user logging in
 
-        require 'loginsite.php';
+            require 'loginsite.php';
+        }
+        elseif(isset($_POST['tagasi'])){
+            header("Location: index.php");
+        }
     }
-}
 ?>
 <div class="login">
     <form class="form" action="login.php" method="POST">
         <div class="text">
-            <?php echo $lang['sisene_filmimaailma']?>
+            <?php echo $lang['sisene_filmimaailma'] ?>
         </div>
-        <input type="text" name="email" placeholder='<?php echo 'e-mail'?>'>
-        <input type="password" name="password" placeholder='<?php echo $lang['salasõna']?>'>
-        <button class="button" name = "login"><?php echo $lang['logi_sisse']?></button>
-        <div class ="button" id="reg" onclick='location.href="index.php"'>
-            <t><?php echo 'mine tagasi'?></t>
+        <input type="text" name="email" placeholder='<?php echo 'e-mail' ?>'>
+        <input type="password" name="password" placeholder='<?php echo $lang['salasõna'] ?>'>
+        <button class="button" name="login">Logi sisse</button>
+        <button class="button" id="reg" name="tagasi">Mine tagasi</button>
+        <div class="buttonen" onclick='location.href="?lang=english"'>
         </div>
-        <div class ="buttonen" onclick='location.href="?lang=english"'>
-        </div>
-        <div class ="buttonet" onclick='location.href="?lang=estonian"'>
+        <div class="buttonet" onclick='location.href="?lang=estonian"'>
         </div>
 
     </form>

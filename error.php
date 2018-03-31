@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+
 <?php
     /* Errorite kuvamine  */
     session_start();
 ?>
+
 <html>
+<link href="pages/main2.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>Error</title>
-    <?php include 'css/css.html'; ?>
+    <title>Viga</title>
 </head>
 <body>
 <div class="form">
-    <h1>Error</h1>
-    <p>
+    <h1>Viga</h1>
+    <h3>
         <?php
             if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
                 echo $_SESSION['message'];
@@ -19,10 +22,8 @@
                 header("location: login.php");
             endif;
         ?>
-    </p>
-    <a href="login.php">
-        <button class="button button-block"></button>
-        Mine tagasi</button></a>
+    </h3>
+    <div class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
 </div>
 </body>
 </html>
