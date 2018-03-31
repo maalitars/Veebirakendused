@@ -18,6 +18,7 @@ session_start(); //realiseerib andmebaasi
     <div class="frontbutton" onclick='location.href="login.php"'>
         <div class="fronttext">
             <?php echo'Logi sisse filmimaailma'?>
+
         </div>
     </div>
     <div class="frontbutton" id= "leftbutton" onclick='location.href="register.php"'>

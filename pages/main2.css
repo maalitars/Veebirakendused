@@ -251,3 +251,21 @@ body {
     margin: 5% 25%;
   }
 }
+
+.card {
+  box-sizing: border-box;
+  margin: 5%;
+}
+
+.picbox{
+  box-sizing: border-box;
+  width: 20%;
+  text-align: left;
+  border: 3px solid white;
+  padding: 10% 10%;
+}
+
+.s{
+  padding: 10px 10px;
+}
+

@@ -33,9 +33,9 @@ asjad salvestama, aga ei salvesta.-->
         <!-- type submit näitab, et submitiks selle formi ära-->
         <button class="button" type="submit" name="register"><?php echo "registreeru"?></button>
 
-        <button class="button" id="reg" onclick='location.href="index.php"'>
+        <div class="button" id="reg" onclick='location.href="index.php"'>
             <?php echo "mine tagasi"?>
-        </button>
+        </div>
 
     </form>
 </body>
