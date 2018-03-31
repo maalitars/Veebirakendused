@@ -11,4 +11,4 @@ $lang= array(
   'minu_andmed' => 'MINU ANDMED',
   'logi_välja' => 'LOGI VÄLJA'
 );
- ?>
+

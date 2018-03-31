@@ -17,7 +17,20 @@
 #leftbutton{
   float:left;
 }
+#centerbutton{
+  padding: 4%;
+  margin: 12% 29%;
+}
 
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
+h2{
+  color: white;
+}
 .fronttext{
   box-sizing: border-box;
   color: #fff;

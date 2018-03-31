@@ -1,3 +1,4 @@
+//_t(home_button) peaks olema lihtsam
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -10,4 +11,4 @@ if(isset($_GET['lang'])==true && in_array($_GET['lang'], $allowed_lang)==true){
 }
 
 include 'language/lang/' . $_SESSION['lang'] .'.php';
- ?>
+

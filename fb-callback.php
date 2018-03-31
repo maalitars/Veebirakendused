@@ -42,4 +42,4 @@ $tokenMetadata = $oAuth2Client->debugToken($accessToken);
 
 // Get user’s Facebook ID
 $userId = $tokenMetadata->getField('user_id');
-?>
+

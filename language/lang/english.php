@@ -11,4 +11,4 @@ $lang= array(
   'minu_andmed' => 'MY ACCOUNT',
   'logi_välja' => 'LOG OUT'
 );
- ?>
+
