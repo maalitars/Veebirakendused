@@ -1,4 +1,4 @@
-//_t(home_button) peaks olema lihtsam
+
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();

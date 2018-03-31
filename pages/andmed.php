@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    require __DIR__ . '/../init.php';
+
     require '../db.php';
 ?>
 <html>
