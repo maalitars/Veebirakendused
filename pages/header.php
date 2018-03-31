@@ -7,10 +7,10 @@ require __DIR__ . '/../init.php';
     <div class="container">
         <logo id="logo">SEENITALL</logo>
         <nav>
+            <form action="../logout.php" method="POST">
             <li><a href="esileht.php"><?php echo $lang['esileht'] ?></a></li>
             <li><a href="filmid.php"><?php echo $lang['filmid'] ?></a></li>
             <li><a href="andmed.php"><?php echo $lang['minu_andmed'] ?></a></li>
-            <form action="../logout.php" method="POST">
                 <li><a href="../index.php"><?php echo $lang['logi_välja'] ?></a></li>
             </form>
         </nav>

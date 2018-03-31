@@ -31,7 +31,13 @@ h3{
 h2{
   color: white;
 }
-
+.data{
+  box-sizing: border-box;
+  margin: -1%;
+  padding: 0;
+  width: 30%;
+  float: right;
+}
 picbox{
     box-sizing: border-box;
     margin: -2%;

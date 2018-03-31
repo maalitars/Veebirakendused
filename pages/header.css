@@ -29,15 +29,19 @@ header::after {
 
 nav {
   float: right;
+  margin: 3%;
 }
 
 nav li {
   display: inline-block;
-  right: 10%;
-  top: 60%;
+  right: 0;
   position: relative;
 }
 
+nav logout{
+  box-sizing: border-box;
+  float: right;
+}
 nav a {
   color: #fff;
   text-decoration: none;
