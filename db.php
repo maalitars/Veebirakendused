@@ -1,7 +1,7 @@
 <?php
 /* Realiseerib andmebaasi */
-$host = 'localhost';
+$host = '46.101.6.112';
 $user = 'root';
-$pass = '';
+$pass = 'ALMVeebirakendus';
 $db = 'accounts';
 $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
