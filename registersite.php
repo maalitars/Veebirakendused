@@ -38,29 +38,22 @@ else { // Email doesn't already exist in a database, proceed...
         $_SESSION['logged_in'] = true; // So we know the user has logged in
         $_SESSION['message'] =
                 
-                 "Confirmation link has been sent to $email, please verify
-                 your account by clicking on the link in the message!";
+                 "Tervitus sõnum on saadetud teie emailile: $email.";
 
         // Send registration confirmation link (verify.php)
         $to      = $email;
-        $subject = 'Account Verification ( clevertechie.com )';
+        $subject = 'Kasutaja kinnitus (seeniatll)';
         $message_body = '
         Hello '.$first_name.',
 
-        Thank you for signing up!
+        Aitäh, et kasutate meie veebilehte!';
 
-        Please click this link to activate your account:
-
-        http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;  
-
-        mail( $to, $subject, $message_body );
-        header("location: profile.php"); 
-
+        mail( $to, $subject, $message_body, 'From:ludvigleis@gmail.com');
+        header("location: profile.php");
     }
 
     else {
         $_SESSION['message'] = 'Registration failed!';
         header("location: error.php");
     }
-
 }

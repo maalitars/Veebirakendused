@@ -13,6 +13,5 @@
 <body>
     <div id="google"></div>
     <p><?php echo $lang['esileht'] ?><p>
-        <a href="https://api.themoviedb.org/3/movie/550?api_key=2db62735185c590d8057361f7a3bf663"> </a>
 </body>
 </html>

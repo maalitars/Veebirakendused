@@ -2,7 +2,7 @@
 <?php
 require 'init.php';
 require 'db.php';
-session_start();
+
 ?>
 <html lang="en">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 <!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega peaks ta andmebaasi
 asjad salvestama, aga ei salvesta.-->
-    <form class="form" action="register.php" method="post">
+    <form class="form" action="register.php" method="POST">
     <div class="text">
         <?php echo 'sisene filmimaailma'?>
     </div>
