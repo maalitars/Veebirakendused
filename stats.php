@@ -2,7 +2,7 @@
 
     $now = date("Y-m-d");
     $dbsql = "accounts";
-    $db = mysqli_connect( "localhost", "root");
+    $db = mysqli_connect( "localhost", "root", "ALMVeebirakendus");
     mysqli_select_db($db, 'accounts');
 
     echo "<h3>Lehe külastajate statistika</h3>";
