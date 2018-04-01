@@ -1,5 +1,5 @@
 <?php
-
+    date_default_timezone_set('Europe/Tallinn');
     $now = date("Y-m-d");
 
     echo "<h3>Lehe külastajate statistika</h3>";
