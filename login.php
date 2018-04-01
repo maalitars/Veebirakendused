@@ -12,7 +12,7 @@
     <meta name="description" content="Siit saab SeenItAll veebilehele sisse logida."/>
     <meta name="keywords" content="logi sisse, filmid, kasutaja, konto, salasõna"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -36,14 +36,15 @@
     }
 ?>
 <div class="login">
+    <div itemscope itemtype="http://schema.org/WebPage">
     <form itemprop="potentialAction" class="form" action="login.php" method="POST">
         <div class="text">
             <p itemprop="text">Sisene filmimaailma</p>
         </div>
-            <input itemprop="email" type="text" name="email" placeholder="e-mail">
-            <input itemprop="password" type="password" name="password" placeholder="salasõna">
-            <button itemprop="login" class="button" name="login">Logi sisse</button>
-            <button itemprop="tagasi" class="button" id="reg" name="tagasi">Mine tagasi</button>
+            <input type="text" name="email" placeholder="e-mail">
+            <input type="password" name="password" placeholder="salasõna">
+            <button itemprop="url" class="button" name="login">Logi sisse</button>
+            <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
         <div>
             <p class="button" id="centerbutton">
                 <?php
@@ -114,11 +115,12 @@
                 ?>
             </p>
         </div>
-        <div itemprop="english" class="buttonen" onclick='location.href="?lang=english"'>
+        <div itemprop="url" class="buttonen" onclick='location.href="?lang=english"'>
         </div>
-        <div itemprop="estonian" class="buttonet" onclick='location.href="?lang=estonian"'>
+        <div itemprop="url" class="buttonet" onclick='location.href="?lang=estonian"'>
         </div>
 
     </form>
+    </div>
 </div>
 </body>

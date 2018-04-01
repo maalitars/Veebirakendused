@@ -12,7 +12,7 @@ require 'db.php';
           content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
     <meta name="keywords" content="kasutaja, registreeru, filmid"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -45,17 +45,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega peaks ta andmebaasi
 asjad salvestama, aga ei salvesta.-->
-<form itemprop="potentialAction" class="form" action="register.php" method="POST">
-    <div class="text">
-        <p itemprop="text">Registreeru</p>
-    </div>
-    <input itemprop="firstname" type="text" name="firstname" placeholder="eesnimi">
-    <input itemprop="lastname" type="text" name="lastname" placeholder="perenimi">
-    <input itemprop="email" type="text" name="email" placeholder="meiliaadress">
-    <input itemprop="password" type="password" name="password" placeholder="salasõna">
-    <!-- type submit näitab, et submitiks selle formi ära-->
-    <button itemprop="button" class="button" type="submit" name="register">Registreeru</button>
-    <button itemprop="button" class="button" id="reg" name="tagasi">Mine tagasi</button>
-</form>
+<div itemscope itemtype="http://schema.org/Webpage">
+    <form itemprop="potentialAction" class="form" action="register.php" method="POST">
+        <div class="text">
+            <p itemprop="text">Registreeru</p>
+        </div>
+        <input itemprop="name" type="text" name="firstname" placeholder="eesnimi">
+        <input itemprop="name" type="text" name="lastname" placeholder="perenimi">
+        <input type="text" name="email" placeholder="meiliaadress">
+        <input type="password" name="password" placeholder="salasõna">
+        <!-- type submit näitab, et submitiks selle formi ära-->
+        <button itemprop="url" class="button" type="submit" name="register">Registreeru</button>
+        <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
+    </form>
+</div>
 </body>
 </html>

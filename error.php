@@ -11,7 +11,7 @@ session_start();
     <meta name="description" content="See on SeenItAll veebilehe veateavituse leht."/>
     <meta name="keywords" content="viga"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -22,7 +22,8 @@ session_start();
     </script>
 </head>
 <body>
-<div itemprop="form" class="form">
+<div itemscope itemtype="http://schema.org/WebPage">
+<div class="form">
     <h1 itemprop="headline">Viga</h1>
     <h3 itemprop="text">
         <?php
@@ -33,7 +34,8 @@ session_start();
         endif;
         ?>
     </h3>
-    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
+    <div itemprop="url" class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
+</div>
 </div>
 </body>
 </html>
