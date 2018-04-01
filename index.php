@@ -8,7 +8,6 @@ session_start(); //realiseerib andmebaasi
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
     <head>
         <title>SeenItAll</title>
-        <title>Viga</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="See on SeenItAll veebilehe avaleht, kust on võimalik sisse logida enda konto kasutamiseks või registreeruda kasutajaks veebilehele. "/>
         <meta name="keywords" content="kasutaja, filmid, logi sisse, registreeru"/>

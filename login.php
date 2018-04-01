@@ -7,7 +7,6 @@
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <head>
     <title>SeenItAll - Logi sisse</title>
-    <title>Viga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Siit saab SeenItAll veebilehele sisse logida."/>
     <meta name="keywords" content="logi sisse, filmid, kasutaja, konto, salasõna"/>

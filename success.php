@@ -25,8 +25,8 @@ session_start();
         ?>
     </p>
     <a href="index.php">
-        <button class="button button-block"/>
-        Home</button></a>
+        <span class="button button-block">
+        Home</span></a>
 </div>
 </body>
 </html>

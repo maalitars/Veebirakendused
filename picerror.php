@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <?php
     /* Errorite kuvamine  */
     session_start();
 ?>
-
 <html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <head>

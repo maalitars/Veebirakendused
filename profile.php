@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 /* Displays user information and some useful messages */
 session_start();

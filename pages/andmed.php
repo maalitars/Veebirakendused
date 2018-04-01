@@ -37,7 +37,7 @@
         if ($result1->num_rows > 0) {
             while ($row = $result1->fetch_assoc()) {
                 $path = $row["path"];
-                echo "<picbox><img src='$path' height='40%' width='40%' /></picbox>";
+                echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
             }
         }
     ?>

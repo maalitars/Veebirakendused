@@ -38,6 +38,10 @@ nav li {
   position: relative;
 }
 
+nav ul{
+    list-style-type: none;
+}
+
 nav logout{
   box-sizing: border-box;
   float: right;
