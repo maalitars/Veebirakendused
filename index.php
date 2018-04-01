@@ -1,11 +1,10 @@
 <?php
-require 'init.php';
-require 'db.php';
-//realiseerib andmebaasi
+    require 'init.php';
+    require 'db.php';
     //realiseerib andmebaasi
     //loeb statistikat lehe külastatavuse kohta
     $now = date("Y-m-d");
-    $browser = $_SERVER['HTTP_USER_AGENT'] ;
+    $browser = $_SERVER['HTTP_USER_AGENT'];
     $ip = $_SERVER['REMOTE_ADDR'];
     $db = mysqli_connect("localhost", "root");
     mysqli_select_db($db, 'accounts');
