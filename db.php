@@ -2,7 +2,7 @@
 /* Realiseerib andmebaasi */
 $host = 'localhost';
 $user = 'root';
-$pass = '';
+$pass = 'ALMVeebirakendus';
 $mysqli = 'accounts';
 
 $mysqli = new mysqli($host,$user,$pass,$mysqli) or die($mysqli->error);
