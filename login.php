@@ -15,11 +15,10 @@
 
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if (isset($_POST['login'])) { //user logging in
+        if (isset($_POST['login'])) { //kasutaja logib sisse
 
             require 'loginsite.php';
-        }
-        elseif(isset($_POST['tagasi'])){
+        } elseif (isset($_POST['tagasi'])) {
             header("Location: index.php");
         }
     }
@@ -29,10 +28,10 @@
         <div class="text">
             <?php echo $lang['sisene_filmimaailma'] ?>
         </div>
-            <input type="text" name="email" placeholder='<?php echo 'e-mail' ?>'>
-            <input type="password" name="password" placeholder='<?php echo $lang['salasõna'] ?>'>
-            <button class="button" name="login">Logi sisse</button>
-            <button class="button" id="reg" name="tagasi">Mine tagasi</button>
+        <input type="text" name="email" placeholder='<?php echo 'e-mail' ?>'>
+        <input type="password" name="password" placeholder='<?php echo $lang['salasõna'] ?>'>
+        <button class="button" name="login">Logi sisse</button>
+        <button class="button" id="reg" name="tagasi">Mine tagasi</button>
         <div class="buttonen" onclick='location.href="?lang=english"'>
         </div>
         <div class="buttonet" onclick='location.href="?lang=estonian"'>

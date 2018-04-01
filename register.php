@@ -9,7 +9,8 @@
 <head>
     <title>SeenItAll - Registreeru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
+    <meta name="description"
+          content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
     <meta name="keywords" content="kasutaja, registreeru, filmid"/>
 </head>
 <body>
@@ -26,7 +27,7 @@
             } elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 $message = "Email on vale, vaata üle!";
                 echo "<script type='text/javascript'>alert('$message');</script>";
-            }else{
+            } else {
                 require "registersite.php";
             }
 

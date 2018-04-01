@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    /* Errorite kuvamine  */
+    /* Errorite kuvamine */
     session_start();
 ?>
 <html lang="et">

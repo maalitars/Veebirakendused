@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
-/* Errorite kuvamine  */
-session_start();
+    /* Errorite kuvamine  */
+    session_start();
 ?>
-<html lang ="et">
+<html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <head>
     <title>Viga</title>
@@ -16,11 +16,11 @@ session_start();
     <h1>Viga</h1>
     <h3>
         <?php
-        if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
-            echo $_SESSION['message'];
-        else:
-            header("location: login.php");
-        endif;
+            if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
+                echo $_SESSION['message'];
+            else:
+                header("location: login.php");
+            endif;
         ?>
     </h3>
     <div class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>

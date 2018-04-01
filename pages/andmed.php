@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-
-    require '../db.php';
+    require_once '../db.php';
+    session_start();
 ?>
 <html lang="et">
 <link href="main2.css" rel="stylesheet" type="text/css"/>
@@ -9,7 +9,8 @@
     <?php include 'header.php'; ?>
     <title>SeenItAll-Andmed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
+    <meta name="description"
+          content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
     <meta name="keywords" content="filmid, andmed, konto, pilt, lemmikžanr, vaadatud filmid, lemmikfilmid"/>
 </head>
 <body>
@@ -17,6 +18,7 @@
     <h2>Profiilipilt</h2>
     <br><br>
     <?php
+
         $result = $mysqli->query("SELECT COUNT(*) as total from users;");
         $row = mysqli_fetch_assoc($result);
         $count = $row['total'];
@@ -39,12 +41,15 @@
                 $path = $row["path"];
                 echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
             }
+        } else {
+            echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture' /></picbox>";
         }
     ?>
     <br><br>
-    <form action="deletepic.php" method="post">
-        <button type="submit" name="submit">Eemalda pilt</button>
+    <form action="deletepic.php" method="POST">
+        <button type="submit" name="delete">Eemalda pilt</button>
     </form>
+
 
 </div>
 </body>

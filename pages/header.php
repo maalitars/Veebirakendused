@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require __DIR__ . '/../init.php';
+    require __DIR__ . '/../init.php';
 ?>
 <link href="header.css" rel="stylesheet" type="text/css"/>
 <header>
