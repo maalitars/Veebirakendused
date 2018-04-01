@@ -12,6 +12,16 @@
     <meta name="description"
           content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
     <meta name="keywords" content="filmid, andmed, konto, pilt, lemmikžanr, vaadatud filmid, lemmikfilmid"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'js/jquery-3.3.1.min.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    </script>
 </head>
 <body>
 <div class="card">

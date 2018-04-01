@@ -11,6 +11,16 @@ require 'db.php';
     <meta name="description"
           content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
     <meta name="keywords" content="kasutaja, registreeru, filmid"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'js/jquery-3.3.1.min.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    </script>
 </head>
 <body>
 <?php

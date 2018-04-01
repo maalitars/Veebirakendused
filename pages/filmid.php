@@ -11,6 +11,16 @@ require __DIR__ . '/../init.php';
     <meta name="description"
           content="See on SeenItAll veebilehe filmide leht, kus on võimalik otsida filme ning samuti filmisoovitused."/>
     <meta name="keywords" content="filmid, soovitused, otsing"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'js/jquery-3.3.1.min.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    </script>
 </head>
 <body>
 <p>FILMID</p>

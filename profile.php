@@ -23,6 +23,16 @@ if ($_SESSION['logged_in'] != 1) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="SeenItAll kasutaja tervitamine."/>
     <meta name="keywords" content="tere tulemast, kasutaja, e-mail"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'js/jquery-3.3.1.min.js';
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    </script>
 </head>
 
 <body>

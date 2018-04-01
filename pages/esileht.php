@@ -14,6 +14,17 @@
     <meta name="description"
           content="See on SeenItAll veebilehe esileht, kus on võimalik vaadata parima Tartu kino asukohta, populaarseid filme ja filmisoovitusi."/>
     <meta name="keywords" content="filmid, esileht, kino, Cinamon, Google Maps, kaart, asukoht, soovitus, populaarsed"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'js/jquery-3.3.1.min.js';
+
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    </script>
 </head>
 <body>
 <div id="google"></div>
