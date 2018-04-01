@@ -30,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <input type="text" name="email" placeholder="e-mail">
         <input type="password" name="password" placeholder="salasõna">
-        <button class="button" name="login">Logi sisse</button>
-        <button class="button" id="reg" name="tagasi">Mine tagasi</button>
+        <button class="button" name="login"><t>Logi sisse</t></button>
+        <button class="button" id="reg" name="tagasi"><t>Mine tagasi</t></button>
         <div class="buttonen" onclick='location.href="?lang=english"'>
         </div>
         <div class="buttonet" onclick='location.href="?lang=estonian"'>

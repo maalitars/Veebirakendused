@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 asjad salvestama, aga ei salvesta.-->
 <form class="form" action="register.php" method="POST">
     <div class="text">
-        <p>Sisene filmimaailma</p>
+        <p>Registreeru</p>
     </div>
     <input type="text" name="firstname" placeholder="eesnimi">
     <input type="text" name="lastname" placeholder="perenimi">
