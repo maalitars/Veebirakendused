@@ -2,10 +2,10 @@
 /* Realiseerib andmebaasi */
 $host = 'localhost';
 $user = 'root';
-$pass = 'ALMVeebirakendus';
-$db = 'accounts';
+$pass = '';
+$mysqli = 'accounts';
 
-$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+$mysqli = new mysqli($host,$user,$pass,$mysqli) or die($mysqli->error);
 Class Dtb
 {
     private static $connection;
