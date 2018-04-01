@@ -6,11 +6,14 @@ session_start();
 <html lang="et">
 <head>
     <title>Edukas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="See on SeenItAll veebilehe teavitus, registreerumise õnnestumise kohta."/>
+    <meta name="keywords" content="registreerumine, filmid, edukas"/>
     <?php include 'pages/main2.css'; ?>
 </head>
 <body>
 <div class="form">
-    <h1><?= 'Success'; ?></h1>
+    <h1><?= 'Edukas'; ?></h1>
     <p>
         <?php
 

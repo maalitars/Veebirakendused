@@ -6,9 +6,11 @@
 ?>
 <html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>SeenItAll - Registreeru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
+    <meta name="keywords" content="kasutaja, registreeru, filmid"/>
 </head>
 <body>
 <?php

@@ -16,10 +16,12 @@ if ($_SESSION['logged_in'] != 1) {
 ?>
 <html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <meta charset="UTF-8">
   <title>Seenitall - Profiil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="SeenItAll kasutaja tervitamine."/>
+    <meta name="keywords" content="tere tulemast, kasutaja, e-mail"/>
 </head>
 
 <body>

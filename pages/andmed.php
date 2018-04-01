@@ -5,10 +5,12 @@
 ?>
 <html lang="et">
 <link href="main2.css" rel="stylesheet" type="text/css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <?php include 'header.php'; ?>
     <title>SeenItAll-Andmed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
+    <meta name="keywords" content="filmid, andmed, konto, pilt, lemmikžanr, vaadatud filmid, lemmikfilmid"/>
 </head>
 <body>
 <div class="card">
