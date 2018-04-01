@@ -45,7 +45,7 @@
             <button class="button" name="login">Logi sisse</button>
             <button class="button" id="reg" name="tagasi">Mine tagasi</button>
         <div>
-            <p id="status">
+            <p class="button" id="centerbutton">
                 <?php
                 // Initialize the Facebook PHP SDK v5.
                 $fb = new Facebook\Facebook([
