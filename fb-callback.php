@@ -89,5 +89,5 @@ if (mysqli_ping($conn)) {
     printf(mysqli_error($conn));
 }
 
-header('Location: http://46.101.6.112/');
+header('Location: http://46.101.6.112/pages/esileht.php');
 ?>
