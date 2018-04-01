@@ -49,8 +49,6 @@
     <form action="deletepic.php" method="POST">
         <button type="submit" name="delete">Eemalda pilt</button>
     </form>
-
-
 </div>
 </body>
 </html>

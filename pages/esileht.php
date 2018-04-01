@@ -3,8 +3,8 @@
 
 ?>
 <html lang="et">
-<link href="main2.css" rel="stylesheet" type="text/css"/>
 <head>
+    <link href="main2.css" rel="stylesheet" type="text/css"/>
     <?php include 'header.php'; ?>
     <script async defer src=
     "https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd2o0ql69mOmEEme_IGDyaXoMSlGIzBk&callback=initMap"></script>

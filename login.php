@@ -5,8 +5,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="et">
-<link href="pages/main2.css" rel="stylesheet" type="text/css">
 <head>
+    <link href="pages/main2.css" rel="stylesheet" type="text/css">
     <title>SeenItAll - Logi sisse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Siit saab SeenItAll veebilehele sisse logida."/>
@@ -28,10 +28,10 @@
 <div class="login">
     <form class="form" action="login.php" method="POST">
         <div class="text">
-            <?php echo $lang['sisene_filmimaailma'] ?>
+            <p>Sisene filmimaailma</p>
         </div>
-            <input type="text" name="email" placeholder='<?php echo 'e-mail' ?>'>
-            <input type="password" name="password" placeholder='<?php echo $lang['salasõna'] ?>'>
+            <input type="text" name="email" placeholder="e-mail">
+            <input type="password" name="password" placeholder="salasõna">
             <button class="button" name="login">Logi sisse</button>
             <button class="button" id="reg" name="tagasi">Mine tagasi</button>
         <div>
@@ -78,7 +78,7 @@
 
                     <button id="logoutButton" class="float-left submit-button"><?= $logoutMessage?></button>
 
-                    <script type="text/javascript">
+                    <script>
                         document.getElementById("logoutButton").onclick = function () {
                             location.href = "logout.php";
                         };
@@ -94,7 +94,7 @@
 
                     <button id="loginButton" class="float-left submit-button"><?php echo $lang['logi_sisse_facebookiga'] ?></button>
 
-                    <script type="text/javascript">
+                    <script>
                         document.getElementById("loginButton").onclick = function () {
                             location.href = "<?=htmlspecialchars($loginUrl)?>";
                         };

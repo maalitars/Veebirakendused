@@ -22,10 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ((empty($_POST['email'])) OR (empty($_POST['firstname']))
             OR (empty($_POST['lastname'])) OR (empty($_POST['password']))) {
             $message = "Oled midagi sisestamata jätnud, vaata üle!";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+            echo "<script>alert('$message');</script>";
         } elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $message = "Email on vale, vaata üle!";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+            echo "<script>alert('$message');</script>";
         } else {
             require "registersite.php";
         }
