@@ -1,15 +1,11 @@
 <?php
 
     $now = date("Y-m-d");
-    $dbsql = "accounts";
-    $db = mysqli_connect( "localhost", "root", "ALMVeebirakendus");
-    mysqli_select_db($db, 'accounts');
-
     echo "<h3>Lehe külastajate statistika</h3>";
     echo "<table border=1 width=60%><tr><td colspan=4><t>Lehe külastajate statistika: </t> ";
 
     $sql = "SELECT thedate_visited FROM statTracker ORDER BY id LIMIT 1";
-    $result = $db->query($sql);
+    $result = $mysqli->query($sql);
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $temp_date = $row["thedate_visited"];
@@ -18,7 +14,7 @@
     }}
     echo " <b>kuni:</b> $now</td></tr>";
 
-    $result1 = $db->query ("SELECT COUNT(*) AS total FROM statTracker;");
+    $result1 = $myqli->query ("SELECT COUNT(*) AS total FROM statTracker;");
     $row1 = mysqli_fetch_assoc($result1);
     $overall_total = $row1 ["total"];
     echo "<tr><td colspan=4><b>Mitu korda on lehte külastatud: </b>$overall_total</td></tr>";
@@ -26,7 +22,7 @@
     echo "<tr><td><b>Kuupäev</b></td><td><b>Aeg</b></td><td><b>IP aadress</b></td><td><b>Veebilehitseja</b></td></tr>";
 
     $sql = "SELECT * FROM statTracker";
-    $result2 = $db->query ($sql);
+    $result2 = $mysqli->query ($sql);
     while ($row2 = $result2->fetch_assoc()){
         $ip = $row2["ip"];
         $browser = $row2["browser"];
