@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-require_once '../db.php';
-session_start();
+    require_once '../db.php';
+    session_start();
 ?>
 <html lang="et">
 <head>
@@ -19,11 +19,11 @@ session_start();
     <br><br>
     <?php
 
-    $result = $mysqli->query("SELECT COUNT(*) as total from users;");
-    $row = mysqli_fetch_assoc($result);
-    $count = $row['total'];
-    echo 'Praegu registreeritud kasutajate arv:  ';
-    echo $count;
+        $result = $mysqli->query("SELECT COUNT(*) as total from users;");
+        $row = mysqli_fetch_assoc($result);
+        $count = $row['total'];
+        echo 'Praegu registreeritud kasutajate arv:  ';
+        echo $count;
     ?>
     <br><br>
     <h3>Vali pilt üleslaadimiseks:</h3>
@@ -34,16 +34,16 @@ session_start();
     </form>
     <br><br>
     <?php
-    $sql = "SELECT path FROM img order by id desc limit 1";
-    $result1 = $mysqli->query($sql);
-    if ($result1->num_rows > 0) {
-        while ($row = $result1->fetch_assoc()) {
-            $path = $row['path'];
-            echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
+        $sql = "SELECT path FROM img order by id desc limit 1";
+        $result1 = $mysqli->query($sql);
+        if ($result1->num_rows > 0) {
+            while ($row = $result1->fetch_assoc()) {
+                $path = $row['path'];
+                echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
+            }
+        } else {
+            echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture' /></picbox>";
         }
-    } else {
-        echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture' /></picbox>";
-    }
     ?>
     <br><br>
     <form action="deletepic.php" method="POST">
