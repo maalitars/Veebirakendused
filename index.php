@@ -1,7 +1,14 @@
 <?php
-require 'init.php';
-require 'db.php';
-//realiseerib andmebaasi
+    require 'init.php';
+    require 'db.php';
+    //realiseerib andmebaasi
+    //loeb statistikat lehe külastatavuse kohta
+    $now = date("Y-m-d");
+    $browser = $_SERVER['HTTP_USER_AGENT'];
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $sql = "INSERT INTO statTracker(browser,ip,time_visited,thedate_visited)
+      VALUES('$browser','$ip', now(),'$now')";
+?>
 
 ?>
 <!DOCTYPE html>

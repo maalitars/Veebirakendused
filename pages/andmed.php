@@ -52,13 +52,16 @@
                 echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
             }
         } else {
-            echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture' /></picbox>";
+            echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture'/></picbox>";
         }
     ?>
     <br><br>
     <form itemprop="potentialAction" action="deletepic.php" method="POST">
         <button itemprop="delete" type="submit" name="delete">Eemalda pilt</button>
     </form>
+</div>
+<div class="tablebox">
+    <?php include "../stats.php"?>
 </div>
 </body>
 </html>

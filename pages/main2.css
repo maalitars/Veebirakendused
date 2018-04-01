@@ -284,7 +284,12 @@ body {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-
+}
+.tablebox{
+    box-sizing: border-box;
+    width: 100%;
+    float: right;
+    margin: -4%;
 }
 
 @media only screen and (max-width: 700px) {
