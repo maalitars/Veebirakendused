@@ -3,12 +3,12 @@
 
     require '../db.php';
 ?>
-<html>
+<html lang="et">
 <link href="main2.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <?php include 'header.php'; ?>
-    <title>SeenItAll</title>
+    <title>SeenItAll-Andmed</title>
 </head>
 <body>
 <div class="card">

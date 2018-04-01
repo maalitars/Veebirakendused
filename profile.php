@@ -14,12 +14,12 @@ if ($_SESSION['logged_in'] != 1) {
     $active = $_SESSION['active'];
 }
 ?>
-<html>
+<html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <meta charset="UTF-8">
-  <title>Seenitall</title>
+  <title>Seenitall - Profiil</title>
 </head>
 
 <body>

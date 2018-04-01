@@ -3,11 +3,11 @@
     require 'init.php';
     require 'db.php';
 ?>
-<html lang="en">
+<html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>SeenItAll</title>
+    <title>SeenItAll - Logi sisse</title>
 </head>
 <body>
 
