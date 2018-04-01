@@ -2,6 +2,16 @@
 require 'init.php';
 require 'db.php';
 //realiseerib andmebaasi
+    //realiseerib andmebaasi
+    //loeb statistikat lehe külastatavuse kohta
+    $now = date("Y-m-d");
+    $browser = $_SERVER['HTTP_USER_AGENT'] ;
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $db = mysqli_connect("localhost", "root");
+    mysqli_select_db($db, 'accounts');
+    $sql = "INSERT INTO stattracker(browser,ip,time_visited,thedate_visited)
+      VALUES('$browser','$ip', now(),'$now')";
+?>
 
 ?>
 <!DOCTYPE html>
