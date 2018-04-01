@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<?php
+
+?>
 <html lang="et">
+<link href="main2.css" rel="stylesheet" type="text/css"/>
 <head>
     <?php include 'header.php'; ?>
-    <link href="main2.css" rel="stylesheet" type="text/css"/>
     <script async defer src=
     "https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd2o0ql69mOmEEme_IGDyaXoMSlGIzBk&callback=initMap"></script>
     <script src="../js/googlemap.js"></script>
@@ -14,6 +17,5 @@
 </head>
 <body>
 <div id="google"></div>
-<p>ESILEHT</p>
 </body>
 </html>
