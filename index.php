@@ -21,10 +21,10 @@ session_start(); //realiseerib andmebaasi
     <div class="fronttext">
         <p>Logi sisse filmimaalima</p>
     </div>
-    <div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
-        <div class="fronttext">
-            <p>Pole kasutajat? Registreeru</p>
-        </div>
+</div>
+<div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
+    <div class="fronttext">
+        <p>Pole kasutajat? Registreeru</p>
     </div>
 </div>
 </body>
