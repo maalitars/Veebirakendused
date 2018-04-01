@@ -90,4 +90,3 @@ if (mysqli_ping($conn)) {
 }
 
 header('Location: http://46.101.6.112/pages/esileht.php');
-?>
