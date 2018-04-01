@@ -8,7 +8,7 @@ require 'db.php';
 <html lang="et">
 <head>
     <link href="pages/main2.css" rel="stylesheet" type="text/css"/>
-    <title>SeenItAll</title>
+    <title>SeenItAll-Avaleht</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description"
           content="See on SeenItAll veebilehe avaleht, kust on võimalik sisse logida enda konto kasutamiseks või registreeruda kasutajaks veebilehele. "/>
@@ -38,13 +38,13 @@ require 'db.php';
 </header>
 <div class="frontbutton" onclick='location.href="login.php"'>
     <div class="fronttext">
-        <?php echo 'Logi sisse filmimaailma' ?>
+        <p>Logi sisse filmimaailma</p>
 
     </div>
 </div>
 <div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
     <div class="fronttext">
-        <?php echo "Pole kasutajat? Registreeru" ?>
+        <p>Pole kasutajat? Registreeru</p>
     </div>
 </div>
 
