@@ -39,11 +39,11 @@
             $to = $email;
             $subject = 'Kasutaja kinnitus (seeniatll)';
             $message_body = '
-        Hello ' . $first_name . ',
+        Tere ' . $first_name . ',
 
         Aitäh, et kasutate meie veebilehte!';
 
-            mail($to, $subject, $message_body, 'From:ludvigleis@gmail.com');
+            mail($to, $subject, $message_body, 'Saatja:ludvigleis@gmail.com');
             header("location: profile.php");
         } else {
             header("location: login.php");

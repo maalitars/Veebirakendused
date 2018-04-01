@@ -2,7 +2,6 @@
 <?php
 require 'init.php';
 require 'db.php';
-
 ?>
 <html lang="et">
 <head>

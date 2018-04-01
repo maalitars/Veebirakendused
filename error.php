@@ -4,8 +4,6 @@
 session_start();
 ?>
 <html lang="et">
-<html lang="et">
-<link href="pages/main2.css" rel="stylesheet" type="text/css">
 <head>
     <link href="pages/main2.css" rel="stylesheet" type="text/css"/>
     <title>Viga</title>
