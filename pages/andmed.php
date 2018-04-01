@@ -25,7 +25,7 @@
 </head>
 <body>
 <div class="card">
-    <h2>Profiilipilt</h2>
+    <h2 itemprop="headline">Profiilipilt</h2>
     <br><br>
     <?php
 
@@ -36,11 +36,11 @@
         echo $count;
     ?>
     <br><br>
-    <h3>Vali pilt üleslaadimiseks:</h3>
+    <h3 itemprop="text">Vali pilt üleslaadimiseks:</h3>
     <br><br>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input name="file" type="file"/><br><br>
-        <button type="submit" name="submit">Lae pilt üles</button>
+    <form itemprop="potentialAction" action="upload.php" method="post" enctype="multipart/form-data">
+        <input itemprop="file" name="file" type="file"/><br><br>
+        <button itemprop="upload" type="submit" name="submit">Lae pilt üles</button>
     </form>
     <br><br>
     <?php
@@ -56,8 +56,8 @@
         }
     ?>
     <br><br>
-    <form action="deletepic.php" method="POST">
-        <button type="submit" name="delete">Eemalda pilt</button>
+    <form itemprop="potentialAction" action="deletepic.php" method="POST">
+        <button itemprop="delete" type="submit" name="delete">Eemalda pilt</button>
     </form>
 </div>
 </body>

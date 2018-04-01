@@ -23,31 +23,31 @@ require __DIR__ . '/../init.php';
     </script>
 </head>
 <body>
-<p>FILMID</p>
+<p itemprop="headline">FILMID</p>
 <!--     Control buttons -->
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>
-    <button class="btn" onclick="filterSelection('Drama')">Drama</button>
-    <button class="btn" onclick="filterSelection('Action')"> Action</button>
-    <button class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
-    <button class="btn" onclick="filterSelection('Family')"> Family</button>
+<div itemprop="genreButtons" id="myBtnContainer">
+    <button itemprop="genre" class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>
+    <button itemprop = "genre" class="btn" onclick="filterSelection('Drama')">Drama</button>
+    <button itemprop="genre" class="btn" onclick="filterSelection('Action')"> Action</button>
+    <button itemprop="genre" class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
+    <button itemprop="genre" class="btn" onclick="filterSelection('Family')"> Family</button>
 </div>
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-<div class="container">
-    <div class="filterDiv Drama">La La Land</div>
-    <div class="filterDiv Action">Mad Max: Fury Road</div>
-    <div class="filterDiv Comedy">Get Out</div>
-    <div class="filterDiv Family">Inside Out</div>
-    <div class="filterDiv Family">Toy Story 3</div>
-    <div class="filterDiv Comedy">The Big Sick</div>
-    <div class="filterDiv Action">Wonder Woman</div>
-    <div class="filterDiv Drama">Baby Driver</div>
-    <div class="filterDiv Drama">Spider-Man: Homecoming</div>
-    <div class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
-    <div class="filterDiv Comedy">The LEGO movie</div>
-    <div class="filterDiv Family">Finding Nemo</div>
-    <div class="filterDiv Drama">Whiplash</div>
+<div itemprop="filmNames" iclass="container">
+    <div itemprop="filmName" class="filterDiv Drama">La La Land</div>
+    <div itemprop="filmName" class="filterDiv Action">Mad Max: Fury Road</div>
+    <div itemprop="filmName" class="filterDiv Comedy">Get Out</div>
+    <div itemprop="filmName" class="filterDiv Family">Inside Out</div>
+    <div itemprop="filmName" class="filterDiv Family">Toy Story 3</div>
+    <div itemprop="filmName" class="filterDiv Comedy">The Big Sick</div>
+    <div itemprop="filmName" class="filterDiv Action">Wonder Woman</div>
+    <div itemprop="filmName" class="filterDiv Drama">Baby Driver</div>
+    <div itemprop="filmName" class="filterDiv Drama">Spider-Man: Homecoming</div>
+    <div itemprop="filmName" class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
+    <div itemprop="filmName" class="filterDiv Comedy">The LEGO movie</div>
+    <div itemprop="filmName" class="filterDiv Family">Finding Nemo</div>
+    <div itemprop="filmName" class="filterDiv Drama">Whiplash</div>
 </div>
 <script>
     filterSelection("all");

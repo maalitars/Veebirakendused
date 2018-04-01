@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-
-?>
 <html lang="et">
 <head>
     <link href="main2.css" rel="stylesheet" type="text/css"/>
@@ -27,6 +24,6 @@
     </script>
 </head>
 <body>
-<div id="google"></div>
+<div itemprop="google" id="google"></div>
 </body>
 </html>
