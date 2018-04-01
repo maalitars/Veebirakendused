@@ -6,8 +6,6 @@
     $now = date("Y-m-d");
     $browser = $_SERVER['HTTP_USER_AGENT'];
     $ip = $_SERVER['REMOTE_ADDR'];
-    $db = mysqli_connect("localhost", "root", "ALMVeebirakendus");
-    mysqli_select_db($db, 'accounts');
     $sql = "INSERT INTO statTracker(browser,ip,time_visited,thedate_visited)
       VALUES('$browser','$ip', now(),'$now')";
 ?>
