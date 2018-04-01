@@ -14,11 +14,11 @@
     <meta name="keywords" content="kasutaja, filmid, logi sisse, registreeru"/>
 </head>
 <header>
-    <t3>Seenitall</t3>
+    <t>Seenitall</t>
     <span class="tooltip">
         <img src="pages/uploads/qmark.png" width="8%" heigth="8%" alt="abiinfo">
         <span class="tooltiptext">
-            SeenItAll - Mis see on? Veebileht, kus saad pidada järge oma vaadatud filmidel ning nende kohta statistikat luua
+            <t2>SeenItAll - Mis see on? Veebileht, kus saad pidada järge oma vaadatud filmidel ning nende kohta statistikat luua</t2>
         </span>
     </span>
 
