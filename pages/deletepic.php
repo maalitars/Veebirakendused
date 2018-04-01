@@ -1,6 +1,5 @@
 <?php
 require '../db.php';
-
 $sql = 'SELECT * FROM img order by id desc limit 1';
 $result = $mysqli->query($sql);
 if ($result->num_rows > 0) {

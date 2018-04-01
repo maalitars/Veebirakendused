@@ -13,7 +13,6 @@ session_start(); //realiseerib andmebaasi
           content="See on SeenItAll veebilehe avaleht, kust on võimalik sisse logida enda konto kasutamiseks või registreeruda kasutajaks veebilehele. "/>
     <meta name="keywords" content="kasutaja, filmid, logi sisse, registreeru"/>
 </head>
-
 <body> <!-- Valid kuhu lehele lähed -->
 <header>
     <t>SeenItAll</t>
@@ -22,12 +21,11 @@ session_start(); //realiseerib andmebaasi
     <div class="fronttext">
         <p>Logi sisse filmimaalima</p>
     </div>
-</div>
-<div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
-    <div class="fronttext">
-        <p>Pole kasutajat? Registreeru</p>
+    <div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
+        <div class="fronttext">
+            <p>Pole kasutajat? Registreeru</p>
+        </div>
     </div>
 </div>
-
 </body>
 </html>
