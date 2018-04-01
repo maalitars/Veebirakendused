@@ -38,8 +38,8 @@ if ($_SESSION['logged_in'] != 1) {
 <body>
 <div class="form">
 
-    <h1>Tere tulemast!</h1>
-    <h3>
+    <h1 itemprop="headline">Tere tulemast!</h1>
+    <h3 itemprop="text">
         <?php
         // Display message about account verification link only once
         if (isset($_SESSION['message'])) {
@@ -51,10 +51,10 @@ if ($_SESSION['logged_in'] != 1) {
         ?>
     </h3>
 
-    <h2><?php echo $first_name . ' ' . $last_name; ?></h2>
-    <h2><?= $email ?></h2>
+    <h2 itemprop="names"><?php echo $first_name . ' ' . $last_name; ?></h2>
+    <h2 itemprop="email"><?= $email ?></h2>
 
-    <div class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Sisene lehele</div>
+    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Sisene lehele</div>
 </div>
 </body>
 </html>

@@ -30,23 +30,21 @@ require 'db.php';
 <header>
     <t>Seenitall</t>
     <span class="tooltip">
-        <img src="pages/uploads/qmark.png" width="8%" heigth="8%" alt="abiinfo">
-        <span class="tooltiptext">
+        <img itemprop="image" src="pages/uploads/qmark.png" width="8%" heigth="8%" alt="abiinfo">
+        <span itemprop="text" class="tooltiptext">
             <t2>SeenItAll - Mis see on? Veebileht, kus saad pidada järge oma vaadatud filmidel ning nende kohta statistikat luua</t2>
         </span>
     </span>
 </header>
-<div class="frontbutton" onclick='location.href="login.php"'>
-    <div class="fronttext">
-        <p>Logi sisse filmimaailma</p>
-
+<div itemprop="button" class="frontbutton" onclick='location.href="login.php"'>
+    <div class="frontText">
+        <p itemprop="text">Logi sisse filmimaailma</p>
     </div>
 </div>
-<div class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
+<div itemprop="button" class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
     <div class="fronttext">
         <p>Pole kasutajat? Registreeru</p>
     </div>
 </div>
-
 </body>
 </html>

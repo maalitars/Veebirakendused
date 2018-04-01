@@ -45,17 +45,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega peaks ta andmebaasi
 asjad salvestama, aga ei salvesta.-->
-<form class="form" action="register.php" method="POST">
+<form itemprop="potentialAction" class="form" action="register.php" method="POST">
     <div class="text">
-        <p>Registreeru</p>
+        <p itemprop="text">Registreeru</p>
     </div>
-    <input type="text" name="firstname" placeholder="eesnimi">
-    <input type="text" name="lastname" placeholder="perenimi">
-    <input type="text" name="email" placeholder="meiliaadress">
-    <input type="password" name="password" placeholder="salasõna">
+    <input itemprop="firstname" type="text" name="firstname" placeholder="eesnimi">
+    <input itemprop="lastname" type="text" name="lastname" placeholder="perenimi">
+    <input itemprop="email" type="text" name="email" placeholder="meiliaadress">
+    <input itemprop="password" type="password" name="password" placeholder="salasõna">
     <!-- type submit näitab, et submitiks selle formi ära-->
-    <button class="button" type="submit" name="register">Registreeru</button>
-    <button class="button" id="reg" name="tagasi">Mine tagasi</button>
+    <button itemprop="button" class="button" type="submit" name="register">Registreeru</button>
+    <button itemprop="button" class="button" id="reg" name="tagasi">Mine tagasi</button>
 </form>
 </body>
 </html>

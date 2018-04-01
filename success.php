@@ -13,8 +13,8 @@ session_start();
 </head>
 <body>
 <div class="form">
-    <h1>Edukas</h1>
-    <p>
+    <h1 itemprop="headline">Edukas</h1>
+    <p itemprop="text">
         <?php
 
         if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
@@ -25,7 +25,7 @@ session_start();
         ?>
     </p>
     <a href="index.php">
-        <span class="button button-block">
+        <span itemprop="button" class="button button-block">
         Home</span></a>
 </div>
 </body>

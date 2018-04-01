@@ -36,14 +36,14 @@
     }
 ?>
 <div class="login">
-    <form class="form" action="login.php" method="POST">
+    <form itemprop="potentialAction" class="form" action="login.php" method="POST">
         <div class="text">
-            <p>Sisene filmimaailma</p>
+            <p itemprop="text">Sisene filmimaailma</p>
         </div>
-            <input type="text" name="email" placeholder="e-mail">
-            <input type="password" name="password" placeholder="salasõna">
-            <button class="button" name="login">Logi sisse</button>
-            <button class="button" id="reg" name="tagasi">Mine tagasi</button>
+            <input itemprop="email" type="text" name="email" placeholder="e-mail">
+            <input itemprop="password" type="password" name="password" placeholder="salasõna">
+            <button itemprop="login" class="button" name="login">Logi sisse</button>
+            <button itemprop="tagasi" class="button" id="reg" name="tagasi">Mine tagasi</button>
         <div>
             <p id="status">
                 <?php
@@ -114,9 +114,9 @@
                 ?>
             </p>
         </div>
-        <div class="buttonen" onclick='location.href="?lang=english"'>
+        <div itemprop="english" class="buttonen" onclick='location.href="?lang=english"'>
         </div>
-        <div class="buttonet" onclick='location.href="?lang=estonian"'>
+        <div itemprop="estonian" class="buttonet" onclick='location.href="?lang=estonian"'>
         </div>
 
     </form>
