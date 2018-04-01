@@ -8,7 +8,7 @@
     $ip = $_SERVER['REMOTE_ADDR'];
     $db = mysqli_connect("localhost", "root");
     mysqli_select_db($db, 'accounts');
-    $sql = "INSERT INTO stattracker(browser,ip,time_visited,thedate_visited)
+    $sql = "INSERT INTO statTracker(browser,ip,time_visited,thedate_visited)
       VALUES('$browser','$ip', now(),'$now')";
 ?>
 
