@@ -15,6 +15,13 @@
 </head>
 <header>
     <t3>Seenitall</t3>
+    <span class="tooltip">
+        <img src="pages/uploads/qmark.png" width="8%" heigth="8%" alt="abiinfo">
+        <span class="tooltiptext">
+            SeenItAll - Mis see on? Veebileht, kus saad pidada järge oma vaadatud filmidel ning nende kohta statistikat luua
+        </span>
+    </span>
+
 </header>
 
 <body> <!-- Valid kuhu lehele lähed -->
