@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 <div class="form">
-    <h1><?= 'Edukas'; ?></h1>
+    <h1>Edukas</h1>
     <p>
         <?php
 

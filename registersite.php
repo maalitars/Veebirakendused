@@ -21,25 +21,21 @@
 // We know user email exists if the rows returned are more than 0
     if ($result->num_rows > 0) {
 
-        $_SESSION['message'] = 'User with this email already exists!';
+        $_SESSION['message'] = 'Selline kasutaja juba eksisteerib';
         header("location: error.php");
 
-    } else { // Email doesn't already exist in a database, proceed...
-
-        // active is 0 by DEFAULT (no need to include it here)
+    } else {
         $sql = "INSERT INTO users (first_name, last_name, email, password, hash) "
             . "VALUES ('$first_name','$last_name','$email','$password', '$hash')";
 
         // Add user to the database
         if ($mysqli->query($sql)) {
 
-            $_SESSION['active'] = 1; //0 until user activates their account with verify.php - no verification!
-            $_SESSION['logged_in'] = true; // So we know the user has logged in
+            $_SESSION['logged_in'] = true;
             $_SESSION['message'] =
 
                 "Tervitus sõnum on saadetud teie emailile: $email.";
 
-            // Send registration confirmation link (verify.php)
             $to = $email;
             $subject = 'Kasutaja kinnitus (seeniatll)';
             $message_body = '
@@ -50,7 +46,6 @@
             mail($to, $subject, $message_body, 'From:ludvigleis@gmail.com');
             header("location: profile.php");
         } else {
-            $_SESSION['message'] = 'Registration failed!';
-            header("location: error.php");
+            header("location: login.php");
         }
     }

@@ -1,296 +1,323 @@
-.frontbutton{
-  box-sizing: border-box;
-  width: 30%;
-  float:right;
-  padding: 13% 10% 0;
-  margin: 10% 10%;
-  text-transform: uppercase;
-  background: #000;
-  height: 15%;
-  border: 3px solid white;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  transition-delay:0.1s;
-  cursor: pointer;
-}
-#leftbutton{
-  float:left;
-}
-#centerbutton{
-  padding: 4%;
-  margin: 12% 29%;
+.frontbutton {
+    box-sizing: border-box;
+    width: 30%;
+    float: right;
+    padding: 13% 10% 0;
+    margin: 10% 10%;
+    text-transform: uppercase;
+    background: #000;
+    height: 15%;
+    border: 3px solid white;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    transition-delay: 0.1s;
+    cursor: pointer;
 }
 
-h1{
-  color: white;
+#leftbutton {
+    float: left;
 }
-h3{
-  color: white;
+
+#centerbutton {
+    padding: 4%;
+    margin: 12% 29%;
 }
-h2{
-  color: white;
+
+h1 {
+    color: white;
 }
-.data{
-  box-sizing: border-box;
-  margin: -1%;
-  padding: 0;
-  width: 30%;
-  float: right;
+
+h3 {
+    color: white;
 }
-picbox{
+
+h2 {
+    color: white;
+}
+
+.data {
+    box-sizing: border-box;
+    margin: -1%;
+    padding: 0;
+    width: 30%;
+    float: right;
+}
+
+picbox {
     box-sizing: border-box;
     margin: -2%;
     padding: 0;
 }
-.fronttext{
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: -100% -50% 10%;
-  padding: 10% 10%;
-  display: block;
+
+.fronttext {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -100% -50% 10%;
+    padding: 10% 10%;
+    display: block;
 
 }
-.login{
-  box-sizing: border-box;
-  width: 60%;
-  float:left;
-  height: 500px;
-  padding: 8% 10% 0;
-  margin: auto;
+
+.login {
+    box-sizing: border-box;
+    width: 60%;
+    float: left;
+    height: 500px;
+    padding: 8% 10% 0;
+    margin: auto;
 }
+
 .form {
-  box-sizing: border-box;
-  background: #1B1B1C;
-  max-width: 400px;
-  height: 500px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
+    box-sizing: border-box;
+    background: #1B1B1C;
+    max-width: 400px;
+    height: 500px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
 }
 
 .text {
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 0 0;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 0;
 }
+
 .form input {
-  box-sizing: border-box;
-  padding-top: 10%;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  margin: 10px 0 15px;
-  font-size: 14px;
+    box-sizing: border-box;
+    padding-top: 10%;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    margin: 10px 0 15px;
+    font-size: 14px;
 }
+
 .button {
-  box-sizing: border-box;
-  text-transform: uppercase;
-  background: #000;
-  width: 40%;
-  height: 15%;
-  border: 3px solid white;
-  padding: 10px;
-  float: left;
-  color: #fff;
-  font-size: 14px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background: #000;
+    width: 40%;
+    height: 15%;
+    border: 3px solid white;
+    padding: 10px;
+    float: left;
+    color: #fff;
+    font-size: 14px;
 
-  transition-delay:0.1s;
-  cursor: pointer;
-}
-
-#reg{
-  float:right;
-  word-break: keep-all;
-}
-t{
-  box-sizing: border-box;
-  color:#fff;
-  font-size:1.2vw;
-  text-align: center;
-}
-.button:hover,.button:active,.button:focus {
-  background: #1B1B1C;
-}
-.form FB{
-  padding: 20px 20px;
-  margin: 20px 200px;
-  position: relative;
-}
-.form buttonFB{
-  text-transform: uppercase;
-  width: 100%;
-  padding: 5%;
-  margin:auto;
-  color: #fff;
-  font-size: 14px;
-  background-color:#19338F;
-  transition-delay:0.3s;
-  cursor: pointer;
+    transition-delay: 0.1s;
+    cursor: pointer;
 }
 
-.form buttonFB:hover,.form buttonFB:active,.form buttonFB:focus {
-  background: #22228D;
+#reg {
+    float: right;
+    word-break: keep-all;
 }
 
-.buttonet{
-  background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/Estonia-icon.png");
-  background-position: bottom;
-  float:right;
-  background-size: 100%;
-  padding: 25px;
-  margin: 10px 20px;
+t {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.2vw;
+    text-align: center;
 }
 
-.buttonen{
-  background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/United-Kingdom-icon.png");
-  float:left;
-  background-size: 100%;
-  padding: 25px;
-  margin: 10px 20px;
+.button:hover, .button:active, .button:focus {
+    background: #1B1B1C;
+}
+
+.form FB {
+    padding: 20px 20px;
+    margin: 20px 200px;
+    position: relative;
+}
+
+.form buttonFB {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 5%;
+    margin: auto;
+    color: #fff;
+    font-size: 14px;
+    background-color: #19338F;
+    transition-delay: 0.3s;
+    cursor: pointer;
+}
+
+.form buttonFB:hover, .form buttonFB:active, .form buttonFB:focus {
+    background: #22228D;
+}
+
+.buttonet {
+    background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/Estonia-icon.png");
+    background-position: bottom;
+    float: right;
+    background-size: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+}
+
+.buttonen {
+    background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/United-Kingdom-icon.png");
+    float: left;
+    background-size: 100%;
+    padding: 25px;
+    margin: 10px 20px;
 }
 
 .language {
     box-sizing: border-box;
-  	margin: 20px 20px;
-  }
-
-a{
-  color: #f1f1f1;
+    margin: 20px 20px;
 }
+
+a {
+    color: #f1f1f1;
+}
+
 body {
-  background: #000;
-  font-family: Courier;
+    background: #000;
+    font-family: Courier;
 }
 
 #google {
-	float: right;
-	margin: 10% 20%;
-	height: 400px;
-	width: 600px;
+    float: right;
+    margin: 10% 20%;
+    height: 400px;
+    width: 600px;
 }
 
 .container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 20px;
-  text-align: center;
-  margin: 2%;
-  display: none; /* Hidden by default */
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
+    margin: 2%;
+    display: none; /* Hidden by default */
 }
 
 /* The "show" class is added to the filtered elements */
 .show {
-  display: block;
+    display: block;
 }
 
 /* Style the buttons */
 .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  margin-top: 2%;
-  background-color: #f1f1f1;
-  cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    margin-top: 2%;
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Add a dark background to the active button */
 .btn.active {
-  background-color: #666;
-  color: white;
+    background-color: #666;
+    color: white;
 }
 
 @media only screen and (max-width: 700px) {
-  .text {
-    font-size: 12px;
-    text-align: center;
-  }
-  .button{
-    width: 100%;
-  }
-  t{
-    font-size: 10px;
-    text-align: center;
-  }
-  .buttonet{
-    padding:15px ;
-    margin: 10px 1px;
+    .text {
+        font-size: 12px;
+        text-align: center;
+    }
 
-  }
-  .buttonen{
-    padding:15px;
-    margin: 10px 1px;
-   }
+    .button {
+        width: 100%;
+    }
 
-}
+    t {
+        font-size: 10px;
+        text-align: center;
+    }
 
-@media only screen and (max-width: 460px){
-.buttonet{
-  padding:15px ;
-  margin: 10px 1px;
+    .buttonet {
+        padding: 15px;
+        margin: 10px 1px;
+
+    }
+
+    .buttonen {
+        padding: 15px;
+        margin: 10px 1px;
+    }
 
 }
-.buttonen{
-  padding:15px;
-  margin: 10px 1px;
-}}
-@media only screen and (max-width: 460px){
-  .text {
-    font-size: 8px;
-    text-align: center;
-  }
-  .button{
-    height: 12%;
-    width: 100%
-  }
-  t{
-    font-size: 7px;
-    text-align: center;
-    margin: 1% -50%;
-  }
-  .buttonet{
 
-    margin: 5% 25% ;
-    padding:25%;
-  }
-  .buttonen{
-    padding: 25%;
-    margin: 5% 25%;
-  }
+@media only screen and (max-width: 460px) {
+    .buttonet {
+        padding: 15px;
+        margin: 10px 1px;
+
+    }
+
+    .buttonen {
+        padding: 15px;
+        margin: 10px 1px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .text {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .button {
+        height: 12%;
+        width: 100%
+    }
+
+    t {
+        font-size: 7px;
+        text-align: center;
+        margin: 1% -50%;
+    }
+
+    .buttonet {
+
+        margin: 5% 25%;
+        padding: 25%;
+    }
+
+    .buttonen {
+        padding: 25%;
+        margin: 5% 25%;
+    }
 }
 
 .card {
-  box-sizing: border-box;
-  margin: 5%;
+    box-sizing: border-box;
+    margin: 5%;
 }
 
-.picbox{
-  box-sizing: border-box;
-  width: 20%;
-  text-align: left;
-  border: 3px solid white;
-  padding: 10% 10%;
+.picbox {
+    box-sizing: border-box;
+    width: 20%;
+    text-align: left;
+    border: 3px solid white;
+    padding: 10% 10%;
 }
 
-.s{
-  padding: 10px 10px;
+.s {
+    padding: 10px 10px;
 }
 

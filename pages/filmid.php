@@ -3,16 +3,17 @@
 require __DIR__ . '/../init.php';
 ?>
 <html lang="et">
-<link href="main2.css" rel="stylesheet" type="text/css"/>
 <head>
+    <link href="main2.css" rel="stylesheet" type="text/css"/>
     <?php include 'header.php'; ?>
     <title>SeenItAll-Filmid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="See on SeenItAll veebilehe filmide leht, kus on võimalik otsida filme ning samuti filmisoovitused."/>
+    <meta name="description"
+          content="See on SeenItAll veebilehe filmide leht, kus on võimalik otsida filme ning samuti filmisoovitused."/>
     <meta name="keywords" content="filmid, soovitused, otsing"/>
 </head>
 <body>
-<p><?php echo $lang['filmid'] ?></p>
+<p>FILMID</p>
 <!--     Control buttons -->
 <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>

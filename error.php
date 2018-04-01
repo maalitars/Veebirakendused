@@ -3,9 +3,14 @@
 /* Errorite kuvamine  */
 session_start();
 ?>
-<html lang ="et">
+<<<<<<< HEAD
+<html lang="et">
+=======
+<html lang="et">
 <link href="pages/main2.css" rel="stylesheet" type="text/css">
+>>>>>>> 5625b2b73147036a25c93983f4e3c043831842bc
 <head>
+    <link href="pages/main2.css" rel="stylesheet" type="text/css"/>
     <title>Viga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="See on SeenItAll veebilehe veateavituse leht."/>
