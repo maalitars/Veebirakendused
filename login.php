@@ -1,6 +1,6 @@
 <?php
-    require 'init.php';
-    require 'db.php';
+require 'init.php';
+require 'db.php';
 ?>
 <!DOCTYPE html>
 <html lang="et">
@@ -24,33 +24,33 @@
 <body>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if (isset($_POST['login'])) { //user logging in
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['login'])) { //user logging in
 
-            require 'loginsite.php';
-        }
-        elseif(isset($_POST['tagasi'])){
-            header("Location: index.php");
-        }
+        require 'loginsite.php';
     }
+    elseif(isset($_POST['tagasi'])){
+        header("Location: index.php");
+    }
+}
 ?>
 <div class="login">
     <div itemscope itemtype="http://schema.org/WebPage">
-    <form itemprop="potentialAction" class="form" action="login.php" method="POST">
-        <div class="text">
-            <p itemprop="text">Sisene filmimaailma</p>
-        </div>
+        <form itemprop="potentialAction" class="form" action="login.php" method="POST">
+            <div class="text">
+                <p itemprop="text">Sisene filmimaailma</p>
+            </div>
             <input type="text" name="email" placeholder="e-mail">
             <input type="password" name="password" placeholder="salasõna">
             <button itemprop="url" class="button" name="login">Logi sisse</button>
             <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
-            <a href="facebook/fbLogin.php" class="button" id="reg"> logi sisse facebookiga </a>
-        <div itemprop="url" class="buttonen" onclick='location.href="?lang=english"'>
-        </div>
-        <div itemprop="url" class="buttonet" onclick='location.href="?lang=estonian"'>
-        </div>
+            <a href="facebook/fbLogin.php" class="button" id="fbreg"> logi sisse facebookiga </a>
+            <div itemprop="url" class="buttonen" onclick='location.href="?lang=english"'>
+            </div>
+            <div itemprop="url" class="buttonet" onclick='location.href="?lang=estonian"'>
+            </div>
 
-    </form>
+        </form>
     </div>
 </div>
 </body>
