@@ -12,7 +12,7 @@ require __DIR__ . '/../init.php';
           content="See on SeenItAll veebilehe filmide leht, kus on võimalik otsida filme ning samuti filmisoovitused."/>
     <meta name="keywords" content="filmid, soovitused, otsing"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -23,31 +23,33 @@ require __DIR__ . '/../init.php';
     </script>
 </head>
 <body>
+<div itemscope itemtype="http://www.schema.org/WebPage">
 <p itemprop="headline">FILMID</p>
 <!--     Control buttons -->
-<div itemprop="genreButtons" id="myBtnContainer">
+<div id="myBtnContainer">
     <button itemprop="genre" class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>
-    <button itemprop = "genre" class="btn" onclick="filterSelection('Drama')">Drama</button>
+    <button itemprop="genre" class="btn" onclick="filterSelection('Drama')">Drama</button>
     <button itemprop="genre" class="btn" onclick="filterSelection('Action')"> Action</button>
     <button itemprop="genre" class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
     <button itemprop="genre" class="btn" onclick="filterSelection('Family')"> Family</button>
 </div>
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-<div itemprop="filmNames" iclass="container">
-    <div itemprop="filmName" class="filterDiv Drama">La La Land</div>
-    <div itemprop="filmName" class="filterDiv Action">Mad Max: Fury Road</div>
-    <div itemprop="filmName" class="filterDiv Comedy">Get Out</div>
-    <div itemprop="filmName" class="filterDiv Family">Inside Out</div>
-    <div itemprop="filmName" class="filterDiv Family">Toy Story 3</div>
-    <div itemprop="filmName" class="filterDiv Comedy">The Big Sick</div>
-    <div itemprop="filmName" class="filterDiv Action">Wonder Woman</div>
-    <div itemprop="filmName" class="filterDiv Drama">Baby Driver</div>
-    <div itemprop="filmName" class="filterDiv Drama">Spider-Man: Homecoming</div>
-    <div itemprop="filmName" class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
-    <div itemprop="filmName" class="filterDiv Comedy">The LEGO movie</div>
-    <div itemprop="filmName" class="filterDiv Family">Finding Nemo</div>
-    <div itemprop="filmName" class="filterDiv Drama">Whiplash</div>
+<div class="container">
+    <div itemprop="name" class="filterDiv Drama">La La Land</div>
+    <div itemprop="name" class="filterDiv Action">Mad Max: Fury Road</div>
+    <div itemprop="name" class="filterDiv Comedy">Get Out</div>
+    <div itemprop="name" class="filterDiv Family">Inside Out</div>
+    <div itemprop="name" class="filterDiv Family">Toy Story 3</div>
+    <div itemprop="name" class="filterDiv Comedy">The Big Sick</div>
+    <div itemprop="name" class="filterDiv Action">Wonder Woman</div>
+    <div itemprop="name" class="filterDiv Drama">Baby Driver</div>
+    <div itemprop="name" class="filterDiv Drama">Spider-Man: Homecoming</div>
+    <div itemprop="name" class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
+    <div itemprop="name" class="filterDiv Comedy">The LEGO movie</div>
+    <div itemprop="name" class="filterDiv Family">Finding Nemo</div>
+    <div itemprop="name" class="filterDiv Drama">Whiplash</div>
+</div>
 </div>
 <script>
     filterSelection("all");

@@ -11,7 +11,7 @@ session_start();
     <meta name="description" content="See on SeenItAll veebilehe pildi veateavituse leht."/>
     <meta name="keywords" content="viga, pilt"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -22,18 +22,21 @@ session_start();
     </script>
 </head>
 <body>
-<div  class="form">
-    <h1 itemprop="headline">Viga</h1>
-    <h3 itemprop="text">
-        <?php
-        if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
-            echo $_SESSION['message'];
-        else:
-            header("location: pages/andmed.php");
-        endif;
-        ?>
-    </h3>
-    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="pages/andmed.php"'>Mine tagasi</div>
+<div class="form">
+    <div itemscope itemtype="http://schema.org/WebPage">
+        <h1 itemprop="headline">Viga</h1>
+        <h3 itemprop="text">
+            <?php
+            if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
+                echo $_SESSION['message'];
+            else:
+                header("location: pages/andmed.php");
+            endif;
+            ?>
+        </h3>
+        <div itemprop="url" class="button" id="centerbutton" onclick='location.href="pages/andmed.php"'>Mine tagasi
+        </div>
+    </div>
 </div>
 </body>
 </html>

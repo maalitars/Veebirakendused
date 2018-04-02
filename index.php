@@ -11,8 +11,6 @@ require 'db.php';
       VALUES('$browser','$ip', now(),'$now')";
     $results = $mysqli->query($sql);
 ?>
-
-?>
 <!DOCTYPE html>
 <html lang="et">
 <head>
@@ -36,6 +34,7 @@ require 'db.php';
 </head>
 
 <body> <!-- Valid kuhu lehele lähed -->
+<div itemscope itemtype="http://schema.org/WebPage">
 <header>
     <t>Seenitall</t>
     <span class="tooltip">
@@ -45,15 +44,16 @@ require 'db.php';
         </span>
     </span>
 </header>
-<div itemprop="button" class="frontbutton" onclick='location.href="login.php"'>
+<div itemprop="url" class="frontbutton" onclick='location.href="login.php"'>
     <div class="frontText">
         <p itemprop="text">Logi sisse filmimaailma</p>
     </div>
 </div>
-<div itemprop="button" class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
-    <div class="fronttext">
+<div itemprop="url" class="frontbutton" id="leftbutton" onclick='location.href="register.php"'>
+    <div class="text">
         <p>Pole kasutajat? Registreeru</p>
     </div>
+</div>
 </div>
 </body>
 </html>

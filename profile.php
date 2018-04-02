@@ -24,7 +24,7 @@ if ($_SESSION['logged_in'] != 1) {
     <meta name="description" content="SeenItAll kasutaja tervitamine."/>
     <meta name="keywords" content="tere tulemast, kasutaja, e-mail"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -34,27 +34,28 @@ if ($_SESSION['logged_in'] != 1) {
         }
     </script>
 </head>
-
 <body>
 <div class="form">
+    <div itemscope itemtype="http://schema.org/Webpage">
+        <h1 itemprop="headline">Tere tulemast!</h1>
+        <h3 itemprop="text">
+            <?php
+            // Display message about account verification link only once
+            if (isset($_SESSION['message'])) {
+                echo $_SESSION['message'];
 
-    <h1 itemprop="headline">Tere tulemast!</h1>
-    <h3 itemprop="text">
-        <?php
-        // Display message about account verification link only once
-        if (isset($_SESSION['message'])) {
-            echo $_SESSION['message'];
+                // Don't annoy the user with more messages upon page refresh
+                unset($_SESSION['message']);
+            }
+            ?>
+        </h3>
 
-            // Don't annoy the user with more messages upon page refresh
-            unset($_SESSION['message']);
-        }
-        ?>
-    </h3>
+        <h2 itemprop="text"><?php echo $first_name . ' ' . $last_name; ?></h2>
+        <h2 itemprop="text"><?= $email ?></h2>
 
-    <h2 itemprop="names"><?php echo $first_name . ' ' . $last_name; ?></h2>
-    <h2 itemprop="email"><?= $email ?></h2>
-
-    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Sisene lehele</div>
+        <div itemprop="url" class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Sisene lehele
+        </div>
+    </div>
 </div>
 </body>
 </html>

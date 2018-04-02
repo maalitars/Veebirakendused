@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-    require_once '../db.php';
-    session_start();
+require_once '../db.php';
+session_start();
 ?>
 <html lang="et">
 <head>
@@ -13,7 +13,7 @@
           content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
     <meta name="keywords" content="filmid, andmed, konto, pilt, lemmikžanr, vaadatud filmid, lemmikfilmid"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
@@ -24,26 +24,26 @@
     </script>
 </head>
 <body>
-<div class="card">
-    <h2 itemprop="headline">Profiilipilt</h2>
-    <br><br>
-    <?php
-
+<div itemscope itemtype="http://www.schema.org/WebPage">
+    <div class="card">
+        <h2 itemprop="headline">Profiilipilt</h2>
+        <br><br>
+        <?php
         $result = $mysqli->query("SELECT COUNT(*) as total from users;");
         $row = mysqli_fetch_assoc($result);
         $count = $row['total'];
         echo 'Praegu registreeritud kasutajate arv:  ';
         echo $count;
-    ?>
-    <br><br>
-    <h3 itemprop="text">Vali pilt üleslaadimiseks:</h3>
-    <br><br>
-    <form itemprop="potentialAction" action="upload.php" method="post" enctype="multipart/form-data">
-        <input itemprop="file" name="file" type="file"/><br><br>
-        <button itemprop="upload" type="submit" name="submit">Lae pilt üles</button>
-    </form>
-    <br><br>
-    <?php
+        ?>
+        <br><br>
+        <h3 itemprop="text">Vali pilt üleslaadimiseks:</h3>
+        <br><br>
+        <form itemprop="potentialAction" action="upload.php" method="post" enctype="multipart/form-data">
+            <input name="file" type="file"/><br><br>
+            <button type="submit" name="submit">Lae pilt üles</button>
+        </form>
+        <br><br>
+        <?php
         $sql = "SELECT path FROM img order by id desc limit 1";
         $result1 = $mysqli->query($sql);
         if ($result1->num_rows > 0) {
@@ -54,14 +54,15 @@
         } else {
             echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture'/></picbox>";
         }
-    ?>
-    <br><br>
-    <form itemprop="potentialAction" action="deletepic.php" method="POST">
-        <button itemprop="delete" type="submit" name="delete">Eemalda pilt</button>
-    </form>
-</div>
-<div class="tablebox">
-    <?php include "../stats.php"?>
+        ?>
+        <br><br>
+        <form itemprop="potentialAction" action="deletepic.php" method="POST">
+            <button type="submit" name="delete">Eemalda pilt</button>
+        </form>
+    </div>
+    <div class="tablebox">
+        <?php include '../stats.php' ?>
+    </div>
 </div>
 </body>
 </html>
