@@ -7,7 +7,7 @@ require __DIR__ . '/../init.php';
     <div class="container">
         <logo id="logo">SEENITALL</logo>
         <nav>
-            <div itemscope itemtype="schema.org/WebPage">
+            <div itemscope itemtype="http://schema.org/WebPage">
                 <form itemprop="potentialAction" action="../logout.php" method="POST">
                     <ul>
                         <li><a itemprop="url" href="esileht.php">Esileht</a></li>
