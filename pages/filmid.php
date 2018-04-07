@@ -30,7 +30,7 @@
         <button itemprop="genre" class="btn" onclick="filterSelection('Family')"> Family</button>
     </div>
 
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories)
+    //The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories)
     <div class="container">
         <div itemprop="name" class="filterDiv Drama">La La Land</div>
         <div itemprop="name" class="filterDiv Action">Mad Max: Fury Road</div>
