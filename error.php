@@ -8,8 +8,6 @@ session_start();
     <link href="pages/main2.css" rel="stylesheet" type="text/css"/>
     <title>Viga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="See on SeenItAll veebilehe veateavituse leht."/>
-    <meta name="keywords" content="viga"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
@@ -22,8 +20,7 @@ session_start();
     </script>
 </head>
 <body>
-<div itemscope itemtype="http://schema.org/WebPage">
-<div class="form">
+<div itemprop="form" class="form">
     <h1 itemprop="headline">Viga</h1>
     <h3 itemprop="text">
         <?php
@@ -34,8 +31,7 @@ session_start();
         endif;
         ?>
     </h3>
-    <div itemprop="url" class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
-</div>
+    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="login.php"'>Mine tagasi</div>
 </div>
 </body>
 </html>

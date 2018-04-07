@@ -1,16 +1,13 @@
+/*index.php nuppude jaoks*/
 .frontbutton {
     box-sizing: border-box;
     width: 30%;
     float: right;
-    padding: 13% 10% 0;
     margin: 10% 10%;
-    text-transform: uppercase;
     background: #000;
-    height: 15%;
     border: 3px solid white;
     color: #fff;
     font-size: 14px;
-    text-align: center;
     transition-delay: 0.1s;
     cursor: pointer;
 }
@@ -24,31 +21,11 @@
     margin: 12% 29%;
 }
 
-h1 {
-    color: white;
+.frontbutton:hover, .frontbutton:active, .frontbutton:focus {
+    background: #1B1B1C;
 }
 
-h3 {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-.data {
-    box-sizing: border-box;
-    margin: -1%;
-    padding: 0;
-    width: 30%;
-    float: right;
-}
-
-picbox {
-    box-sizing: border-box;
-    margin: -2%;
-    padding: 0;
-}
+/*kooditekstide jaoks*/
 
 .fronttext {
     box-sizing: border-box;
@@ -59,9 +36,9 @@ picbox {
     text-transform: uppercase;
     margin: -100% -50% 10%;
     display: block;
-
 }
 
+/*login.php's*/
 .login {
     box-sizing: border-box;
     width: 60%;
@@ -71,16 +48,25 @@ picbox {
     margin: auto;
 }
 
+/*pildi vorming kasutajal*/
+
+#profileimg {
+    width: 20%;
+    height: 20%;
+}
+
+/*tekstivormingu css*/
 .form {
     box-sizing: border-box;
     background: #1B1B1C;
     max-width: 400px;
-    height: 500px;
+    height: 650px;
     margin: 0 auto 100px;
     padding: 45px;
-    text-align: center;
+    color: white;
 }
 
+/*Div klass textide ja boxide jaoks*/
 .text {
     color: #fff;
     font-size: 25px;
@@ -100,6 +86,7 @@ picbox {
     font-size: 14px;
 }
 
+/*Login ja registreerimise buttonid*/
 .button {
     box-sizing: border-box;
     text-transform: uppercase;
@@ -121,52 +108,31 @@ picbox {
     word-break: keep-all;
 }
 
-t {
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-}
-
-t2 {
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-}
-
-t3 {
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-}
-
 .button:hover, .button:active, .button:focus {
     background: #1B1B1C;
 }
 
-.form FB {
-    padding: 20px 20px;
-    margin: 20px 200px;
-    position: relative;
-}
-
-.form buttonFB {
+/*FB button'i css*/
+.FBbutton {
+    box-sizing: border-box;
     text-transform: uppercase;
-    width: 100%;
-    padding: 5%;
-    margin: auto;
-    color: #fff;
+    padding: 2% 20%;
+    height: 10%;
+    margin: 10% 5%;
     font-size: 14px;
-    background-color: #19338F;
-    transition-delay: 0.3s;
+    border: 3px solid white;
+    transition-delay: 0.1s;
     cursor: pointer;
+    background: #3B5998;
+    color: white;
+    word-break: keep-all;
 }
 
-.form buttonFB:hover, .form buttonFB:active, .form buttonFB:focus {
-    background: #22228D;
+.FBbutton:hover {
+    opacity: 0.7;
 }
 
+/*
 .buttonet {
     background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/Estonia-icon.png");
     background-position: bottom;
@@ -188,21 +154,12 @@ t3 {
     box-sizing: border-box;
     margin: 20px 20px;
 }
-
-a {
-    color: #f1f1f1;
-}
+*/
 
 body {
     background: #000;
     font-family: Courier;
-}
-
-#google {
-    float: right;
-    margin: 10% 20%;
-    height: 400px;
-    width: 600px;
+    color: white;
 }
 
 .container {
@@ -246,69 +203,13 @@ body {
     color: white;
 }
 
+/*Andmed.php klassid*/
 .card {
     box-sizing: border-box;
     margin: 5%;
 }
 
-.picbox {
-    box-sizing: border-box;
-    width: 20%;
-    text-align: left;
-    border: 3px solid white;
-    padding: 10% 10%;
-}
-
-.s {
-    padding: 10px 10px;
-}
-
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 100%;
-    background-color: gray;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-.tablebox{
-    box-sizing: border-box;
-    width: 100%;
-    float: right;
-    margin: -4%;
-}
-
 @media only screen and (max-width: 700px) {
-    t2 {
-        box-sizing: border-box;
-        color: #fff;
-        text-align: center;
-        font-size: 12px;
-    }
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
-    }
-    .tooltip .tooltiptext {
-
-        width: 80%;
-
-    }
     .text {
         font-size: 12px;
         text-align: center;
@@ -318,38 +219,24 @@ body {
         width: 100%;
     }
 
-    t {
-        font-size: 10px;
-        text-align: center;
-    }
-    t3{
-        font-size: 15px;
-
+    .FBbutton {
+        height: 10%;
+        font-size: 11px;
+        padding: 0 0;
     }
 
+    /*
     .buttonet {
         padding: 15px;
         margin: 10px 1px;
-
     }
-
     .buttonen {
         padding: 15px;
         margin: 10px 1px;
-    }
-
+    }*/
 }
 
 @media only screen and (max-width: 460px) {
-    t2 {
-        box-sizing: border-box;
-        color: #fff;
-        text-align: center;
-        font-size: 7px;
-    }
-    .tooltip .tooltiptext {
-        width: 60%;
-    }
     .text {
         font-size: 8px;
         text-align: center;
@@ -357,31 +244,42 @@ body {
 
     .button {
         height: 12%;
-        width: 100%
-    }
-
-    t {
-        font-size: 5px;
-        text-align: center;
-        display: inherit;
-    }
-
-    t3 {
+        width: 100%;
         font-size: 8px;
-        display: inherit;
     }
 
-    .buttonet {
+    .FBbutton {
+        height: 8%;
+        font-size: 7px;
+        padding: 0 0;
+    }
 
+    /*
+    .buttonet {
         margin: 5% 25%;
         padding: 25%;
     }
-
     .buttonen {
         padding: 25%;
         margin: 5% 25%;
-    }}
+    }*/
+}
 
+/*FB welcome style*/
+.hello {
+    margin: 5%;
+}
 
+#salasõna {
+    color: black;
+}
+
+#email {
+    color: black;
+}
+
+label {
+    font: normal 12px courier !important;
+}
 
 

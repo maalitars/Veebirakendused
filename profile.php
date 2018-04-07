@@ -2,7 +2,6 @@
 <?php
 /* Displays user information and some useful messages */
 session_start();
-
 // Check if user is logged in using the session variable
 if ($_SESSION['logged_in'] != 1) {
     $_SESSION['message'] = "You must log in before viewing your profile page!";
@@ -21,8 +20,6 @@ if ($_SESSION['logged_in'] != 1) {
     <meta charset="UTF-8">
     <title>Seenitall - Profiil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="SeenItAll kasutaja tervitamine."/>
-    <meta name="keywords" content="tere tulemast, kasutaja, e-mail"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
@@ -43,7 +40,6 @@ if ($_SESSION['logged_in'] != 1) {
             // Display message about account verification link only once
             if (isset($_SESSION['message'])) {
                 echo $_SESSION['message'];
-
                 // Don't annoy the user with more messages upon page refresh
                 unset($_SESSION['message']);
             }

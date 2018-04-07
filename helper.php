@@ -1,6 +1,7 @@
 <?php
 
-function config($key){
+function config($key)
+{
     $database = include('config.php');
     return $database[$key];
 }

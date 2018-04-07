@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<?php
-require __DIR__ . '/../init.php';
-?>
 <html lang="et">
 <head>
     <link href="main2.css" rel="stylesheet" type="text/css"/>
-    <?php include 'header.php'; ?>
     <title>SeenItAll-Filmid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description"
-          content="See on SeenItAll veebilehe filmide leht, kus on võimalik otsida filme ning samuti filmisoovitused."/>
-    <meta name="keywords" content="filmid, soovitused, otsing"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
@@ -23,33 +16,36 @@ require __DIR__ . '/../init.php';
     </script>
 </head>
 <body>
-<div itemscope itemtype="http://www.schema.org/WebPage">
-<p itemprop="headline">FILMID</p>
-<!--     Control buttons -->
-<div id="myBtnContainer">
-    <button itemprop="genre" class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show all</button>
-    <button itemprop="genre" class="btn" onclick="filterSelection('Drama')">Drama</button>
-    <button itemprop="genre" class="btn" onclick="filterSelection('Action')"> Action</button>
-    <button itemprop="genre" class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
-    <button itemprop="genre" class="btn" onclick="filterSelection('Family')"> Family</button>
-</div>
+<?php include 'header.php'; ?>
+<!--<div itemscope itemtype="http://www.schema.org/WebPage">
+    <p itemprop="headline">FILMID</p>
 
-<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-<div class="container">
-    <div itemprop="name" class="filterDiv Drama">La La Land</div>
-    <div itemprop="name" class="filterDiv Action">Mad Max: Fury Road</div>
-    <div itemprop="name" class="filterDiv Comedy">Get Out</div>
-    <div itemprop="name" class="filterDiv Family">Inside Out</div>
-    <div itemprop="name" class="filterDiv Family">Toy Story 3</div>
-    <div itemprop="name" class="filterDiv Comedy">The Big Sick</div>
-    <div itemprop="name" class="filterDiv Action">Wonder Woman</div>
-    <div itemprop="name" class="filterDiv Drama">Baby Driver</div>
-    <div itemprop="name" class="filterDiv Drama">Spider-Man: Homecoming</div>
-    <div itemprop="name" class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
-    <div itemprop="name" class="filterDiv Comedy">The LEGO movie</div>
-    <div itemprop="name" class="filterDiv Family">Finding Nemo</div>
-    <div itemprop="name" class="filterDiv Drama">Whiplash</div>
-</div>
+    <div id="myBtnContainer">
+        <button itemprop="genre" class="btn active" onclick="filterSelection('all')" style="margin-left: 10%;"> Show
+            all
+        </button>
+        <button itemprop="genre" class="btn" onclick="filterSelection('Drama')">Drama</button>
+        <button itemprop="genre" class="btn" onclick="filterSelection('Action')"> Action</button>
+        <button itemprop="genre" class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
+        <button itemprop="genre" class="btn" onclick="filterSelection('Family')"> Family</button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories)
+    <div class="container">
+        <div itemprop="name" class="filterDiv Drama">La La Land</div>
+        <div itemprop="name" class="filterDiv Action">Mad Max: Fury Road</div>
+        <div itemprop="name" class="filterDiv Comedy">Get Out</div>
+        <div itemprop="name" class="filterDiv Family">Inside Out</div>
+        <div itemprop="name" class="filterDiv Family">Toy Story 3</div>
+        <div itemprop="name" class="filterDiv Comedy">The Big Sick</div>
+        <div itemprop="name" class="filterDiv Action">Wonder Woman</div>
+        <div itemprop="name" class="filterDiv Drama">Baby Driver</div>
+        <div itemprop="name" class="filterDiv Drama">Spider-Man: Homecoming</div>
+        <div itemprop="name" class="filterDiv Action">Star Wars: Episode VII - The Force Awakens</div>
+        <div itemprop="name" class="filterDiv Comedy">The LEGO movie</div>
+        <div itemprop="name" class="filterDiv Family">Finding Nemo</div>
+        <div itemprop="name" class="filterDiv Drama">Whiplash</div>
+    </div>
 </div>
 <script>
     filterSelection("all");
@@ -100,5 +96,5 @@ require __DIR__ . '/../init.php';
             this.className += " active";
         });
     }
-</script>
+</script>-->
 </body>

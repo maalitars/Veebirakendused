@@ -1,7 +1,9 @@
 <?php
 
+if (!session_id()) {
     session_start();
-    session_unset();
-    session_destroy();
+}
+session_unset();
+session_destroy();
 
-    header("Location: login.php");
+header("Location: http://46.101.6.112/login.php");

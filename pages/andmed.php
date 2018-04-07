@@ -6,12 +6,8 @@ session_start();
 <html lang="et">
 <head>
     <link href="main2.css" rel="stylesheet" type="text/css"/>
-    <?php include 'header.php'; ?>
     <title>SeenItAll-Andmed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description"
-          content="Siin lehel on võimalik vaadata kõiki enda SeenItAll kasutaja andmeid: lemmikžanrit, filmide vaatamisele kulutatud aega, vaadatud filme ja lemmikfilme."/>
-    <meta name="keywords" content="filmid, andmed, konto, pilt, lemmikžanr, vaadatud filmid, lemmikfilmid"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
@@ -24,6 +20,7 @@ session_start();
     </script>
 </head>
 <body>
+<?php include 'header.php'; ?>
 <div itemscope itemtype="http://www.schema.org/WebPage">
     <div class="card">
         <h2 itemprop="headline">Profiilipilt</h2>
@@ -39,7 +36,8 @@ session_start();
         <h3 itemprop="text">Vali pilt üleslaadimiseks:</h3>
         <br><br>
         <form itemprop="potentialAction" action="upload.php" method="post" enctype="multipart/form-data">
-            <input name="file" type="file"/><br><br>
+            <label for="file">File</label>
+            <input name="file" type="file" id="file"/><br><br>
             <button type="submit" name="submit">Lae pilt üles</button>
         </form>
         <br><br>
@@ -49,19 +47,16 @@ session_start();
         if ($result1->num_rows > 0) {
             while ($row = $result1->fetch_assoc()) {
                 $path = $row['path'];
-                echo "<picbox><img src='$path' height='40%' width='40%' alt='Profile picture' /></picbox>";
+                echo "<div id='profileimg'><img src='$path' alt='Profile picture' /></div>";
             }
         } else {
-            echo "<picbox><img src='uploads/profilesdefault.jpg' height='20%' width='20%' alt='Profile picture'/></picbox>";
+            echo "<div id='profileimg'><img src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
         }
         ?>
         <br><br>
         <form itemprop="potentialAction" action="deletepic.php" method="POST">
             <button type="submit" name="delete">Eemalda pilt</button>
         </form>
-    </div>
-    <div class="tablebox">
-        <?php include '../stats.php' ?>
     </div>
 </div>
 </body>

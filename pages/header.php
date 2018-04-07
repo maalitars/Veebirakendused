@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<?php
-require __DIR__ . '/../init.php';
-?>
 <link href="header.css" rel="stylesheet" type="text/css"/>
 <header>
     <div class="container">
-        <logo id="logo">SEENITALL</logo>
+        SEENITALL
         <nav>
             <div itemscope itemtype="http://schema.org/WebPage">
                 <form itemprop="potentialAction" action="../logout.php" method="POST">
@@ -21,5 +17,4 @@ require __DIR__ . '/../init.php';
         <div class="line"></div>
     </div>
 </header>
-
 

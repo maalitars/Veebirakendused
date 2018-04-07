@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-require 'init.php';
 require 'db.php';
 ?>
 <html lang="et">
@@ -8,9 +7,6 @@ require 'db.php';
     <link href="pages/main2.css" rel="stylesheet" type="text/css">
     <title>SeenItAll - Registreeru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description"
-          content="Siin on võimalik registreeruda SeenItAll kasutajaks, et kõik filmiinfo oleks alati ühes ja samas kohas olemas."/>
-    <meta name="keywords" content="kasutaja, registreeru, filmid"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
@@ -42,18 +38,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
-<!-- sisestad oma emailid ja asjad ära ja siis peaks buttoni vajutusega peaks ta andmebaasi
-asjad salvestama, aga ei salvesta.-->
 <div itemscope itemtype="http://schema.org/Webpage">
     <form itemprop="potentialAction" class="form" action="register.php" method="POST">
         <div class="text">
             <p itemprop="text">Registreeru</p>
         </div>
-        <input itemprop="name" type="text" name="firstname" placeholder="eesnimi">
-        <input itemprop="name" type="text" name="lastname" placeholder="perenimi">
-        <input type="text" name="email" placeholder="meiliaadress">
-        <input type="password" name="password" placeholder="salasõna">
+        <label for="firstname">Eesnimi</label>
+        <input itemprop="name" type="text" name="firstname" id="firstname">
+        <label for="lastname">Perenimi</label>
+        <input itemprop="name" type="text" name="lastname" id="lastname">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email">
+        <label for="password">Salasõna</label>
+        <input type="password" name="password" id="password">
         <!-- type submit näitab, et submitiks selle formi ära-->
         <button itemprop="url" class="button" type="submit" name="register">Registreeru</button>
         <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
