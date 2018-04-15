@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+?>
 <html lang="et">
 <head>
     <link href="main2.css" rel="stylesheet" type="text/css"/>
@@ -13,10 +17,37 @@
             var firstScript = document.getElementsByTagName('script')[0];
             firstScript.parentNode.insertBefore(script, firstScript);
         }
+        $(document).ready(function () {
+            var filmsCount = 2;
+            var filmsAllCount = 2;// limitiga võrdne
+            $("button").click(function () {
+                filmsCount = filmsCount + 2;
+                filmsAllCount = filmsAllCount + 1;//suurendame igal korral
+                $("#filmsTable").load("../morefilms.php", {
+                    filmsNewCount: filmsCount
+                });
+                if(filmsAllCount > filmsCount){
+                    $("button").hide();
+                }
+                filmsAllCount = filmsAllCount + 2;
+            });
+
+        });
     </script>
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+?>
+<div>
+    <div id="filmsTable">
+        <?php include '../films.php';
+            $result = $mysqli->query("SELECT COUNT(*) as total from Movies;");
+            $row = mysqli_fetch_assoc($result);
+            $count = $row['total'];
+           ?>
+    </div>
+    <button class="frontbutton" id="filmsbutton">Lae rohkem</button>
+</div>
 <!--<div itemscope itemtype="http://www.schema.org/WebPage">
     <p itemprop="headline">FILMID</p>
 
@@ -98,3 +129,4 @@
     }
 </script>-->
 </body>
+</html>

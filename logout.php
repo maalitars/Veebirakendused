@@ -1,7 +1,7 @@
 <?php
 
 if (!session_id()) {
-    session_start();
+    echo "pole sessiooni alustatud";
 }
 session_unset();
 session_destroy();

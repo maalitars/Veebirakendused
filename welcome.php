@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+
 <?php
-/* Errorite kuvamine  */
-session_start();
+    session_start();
+    $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
+
 <html lang="et">
 <head>
     <link href="pages/main2.css" rel="stylesheet" type="text/css"/>
-    <title>Viga</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>SeenItAll- Tere tulemast!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
@@ -20,18 +22,20 @@ session_start();
     </script>
 </head>
 <body>
+
 <div itemprop="form" class="form">
-    <h1 itemprop="headline">Viga</h1>
-    <h2 itemprop="text">
+    <h1 itemprop="headline">Tere tulemast!</h1>
+    <h3 itemprop="text">
         <?php
-        if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
-            echo $_SESSION['message'];
-        else:
-           // header("location: index.php");
-        endif;
+            if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
+                echo $_SESSION['message'];
+            else:
+                header("location: login.php");
+            endif;
         ?>
-    </h2>
-    <div itemprop="button" class="errorbutton" id="centerbutton" onclick='location.href="index.php"'>Mine tagasi</div>
+    </h3>
+    <div itemprop="button" class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Mine lehele</div>
 </div>
+
 </body>
 </html>

@@ -24,17 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['tagasi'])) {
         header("Location: index.php");
     }
-    if (isset($_POST['register'])) {
-        if ((empty($_POST['email'])) OR (empty($_POST['firstname']))
-            OR (empty($_POST['lastname'])) OR (empty($_POST['password']))) {
-            $message = "Oled midagi sisestamata jätnud, vaata üle!";
-            echo "<script>alert('$message');</script>";
-        } elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $message = "Email on vale, vaata üle!";
-            echo "<script>alert('$message');</script>";
-        } else {
+    else if (isset($_POST['register'])) {
             require "registersite.php";
-        }
     }
 }
 ?>
@@ -43,17 +34,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="text">
             <p itemprop="text">Registreeru</p>
         </div>
-        <label for="firstname">Eesnimi</label>
-        <input itemprop="name" type="text" name="firstname" id="firstname">
-        <label for="lastname">Perenimi</label>
-        <input itemprop="name" type="text" name="lastname" id="lastname">
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email">
-        <label for="password">Salasõna</label>
-        <input type="password" name="password" id="password">
+        <label class="regLabel" for="firstname">Eesnimi</label>
+        <input itemprop="name" type="text" name="firstname" id="firstname" required oninvalid="this.setCustomValidity('Sisesta eesnimi!')" oninput="setCustomValidity('')">
+        <label class="regLabel" for="lastname">Perenimi</label>
+        <input itemprop="name" type="text" name="lastname" id="lastname" required oninvalid="this.setCustomValidity('Sisesta perenimi!')" oninput="setCustomValidity('')">
+        <label class="regLabel" for="email">E-mail</label>
+        <input type="email" name="email" id="email" required oninvalid="this.setCustomValidity('Sisesta email!')" oninput="setCustomValidity('')">
+        <label class="regLabel" for="password">Salasõna</label>
+        <input type="password" name="password" id="password" required oninvalid="this.setCustomValidity('Sisesta salasõna!')" oninput="setCustomValidity('')">
         <!-- type submit näitab, et submitiks selle formi ära-->
         <button itemprop="url" class="button" type="submit" name="register">Registreeru</button>
-        <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
+        <button itemprop="url" class="button" id="reg" name="tagasi" onclick="window.history.back()">Mine tagasi</button>
     </form>
 </div>
 </body>

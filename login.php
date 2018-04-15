@@ -1,6 +1,7 @@
 <?php
-require 'init.php';
+/*require 'init.php';*/
 require 'db.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="et">
@@ -28,7 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } elseif (isset($_POST['tagasi'])) {
         header("Location: index.php");
     } elseif (isset($_POST['facebook'])) {
+        $_SESSION['facebook_id'] = true;
         header("Location: /facebook/fbLogin.php");
+    } elseif (isset($_POST['idcard'])){
+        include_once "loginphp/idcardLogin.php";
+        $_SESSION['idcard'] = true;
+        header("Location: loginphp/idcardLogin.php?login=true");
     }
 }
 ?>
@@ -45,6 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button itemprop="url" class="button" name="login">Logi sisse</button>
             <button itemprop="url" class="button" id="reg" name="tagasi">Mine tagasi</button>
             <button itemprop="url" class="FBbutton" name="facebook">logi sisse facebookiga</button>
+            <button itemprop="url" class="IDbutton" name="idcard">logi sisse id-kaardiga</button>
+
+            <!--<button itemprop="url" class="IDbutton" name="idcard">logi sisse id-kaardiga</button>-->
             <!--
             <div itemprop="url" class="buttonen" onclick='location.href="?lang=english"'>
             </div>

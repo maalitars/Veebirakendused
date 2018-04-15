@@ -2,6 +2,13 @@
 <?php
 require_once '../db.php';
 session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+
+//autoriseerimata kasutaja ei saa andmed.php lehele ligi
+if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['facebook_id'] == true)){
+    header("Location: http://46.101.6.112/");
+}
+
 ?>
 <html lang="et">
 <head>
@@ -33,11 +40,11 @@ session_start();
         echo $count;
         ?>
         <br><br>
-        <h3 itemprop="text">Vali pilt üleslaadimiseks:</h3>
-        <br><br>
-        <form itemprop="potentialAction" action="upload.php" method="post" enctype="multipart/form-data">
-            <label for="file">File</label>
-            <input name="file" type="file" id="file"/><br><br>
+        <form itemprop="potentialAction" action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="chooseFile">Vali fail üleslaadimiseks:</label>
+            <br><br>
+            <input name="file" type="file" id="fileUpload"></input>
+            <br><br>
             <button type="submit" name="submit">Lae pilt üles</button>
         </form>
         <br><br>
@@ -47,10 +54,10 @@ session_start();
         if ($result1->num_rows > 0) {
             while ($row = $result1->fetch_assoc()) {
                 $path = $row['path'];
-                echo "<div id='profileimg'><img src='$path' alt='Profile picture' /></div>";
+                echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='$path' alt='Profile picture' /></div>";
             }
         } else {
-            echo "<div id='profileimg'><img src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
+            echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
         }
         ?>
         <br><br>

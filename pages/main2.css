@@ -7,9 +7,17 @@
     background: #000;
     border: 3px solid white;
     color: #fff;
-    font-size: 14px;
     transition-delay: 0.1s;
     cursor: pointer;
+}
+
+
+#filmsbutton{
+    font-size: 1.1em;
+    width: 20%;
+    margin: 3% 10%;
+    padding: 1%;
+    float: none;
 }
 
 #leftbutton {
@@ -44,15 +52,8 @@
     width: 60%;
     float: left;
     height: 500px;
-    padding: 8% 10% 0;
+    padding: 5% 10% 0;
     margin: auto;
-}
-
-/*pildi vorming kasutajal*/
-
-#profileimg {
-    width: 20%;
-    height: 20%;
 }
 
 /*tekstivormingu css*/
@@ -64,12 +65,13 @@
     margin: 0 auto 100px;
     padding: 45px;
     color: white;
+
 }
 
 /*Div klass textide ja boxide jaoks*/
 .text {
     color: #fff;
-    font-size: 25px;
+    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -78,14 +80,30 @@
 
 .form input {
     box-sizing: border-box;
-    padding-top: 10%;
     outline: 0;
     background: #f2f2f2;
     width: 100%;
     margin: 10px 0 15px;
     font-size: 14px;
 }
+#fileUpload{
+    padding: 0;
+    background: none;
+    float: none;
+    width: 100%;
+    margin-top: -2em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
 
+.avatarPicture {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    object-fit: contain;
+}
 /*Login ja registreerimise buttonid*/
 .button {
     box-sizing: border-box;
@@ -132,6 +150,23 @@
     opacity: 0.7;
 }
 
+/*ID-kaardi button*/
+
+.IDbutton {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 2% 20%;
+    height: 10%;
+    margin: 10% 5%;
+    font-size: 14px;
+    border: 3px solid white;
+    transition-delay: 0.1s;
+    cursor: pointer;
+    background: #46AEAE;
+    color: white;
+    word-break: keep-all;
+}
+
 /*
 .buttonet {
     background-image: url("http://icons.iconarchive.com/icons/hopstarter/flag-borderless/256/Estonia-icon.png");
@@ -155,6 +190,20 @@
     margin: 20px 20px;
 }
 */
+.errorbutton{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background: #000;
+    width: 40%;
+    height: 15%;
+    border: 3px solid white;
+    padding: 10px;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+
+    transition-delay: 0.1s;
+    cursor: pointer;}
 
 body {
     background: #000;
@@ -211,7 +260,7 @@ body {
 
 @media only screen and (max-width: 700px) {
     .text {
-        font-size: 12px;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -221,10 +270,28 @@ body {
 
     .FBbutton {
         height: 10%;
-        font-size: 11px;
-        padding: 0 0;
+        font-size: 1em;
+        padding: 0 20%;
+        margin: 10% -20%;
     }
 
+    .IDbutton{
+        height: 10%;
+        font-size: 1em;
+        padding: 0 20%;
+        margin: 10% -20%;
+    }
+
+    .frontbutton {
+        width: 50%;
+        float: none;
+        padding: 3%;
+        margin: 5% 25%;
+        font-size: 1.5em;
+    }
+    .errorbutton{
+        width:50%;
+    }
     /*
     .buttonet {
         padding: 15px;
@@ -238,20 +305,50 @@ body {
 
 @media only screen and (max-width: 460px) {
     .text {
-        font-size: 8px;
+        font-size: 1em;
         text-align: center;
     }
 
+    #filmsbutton{
+        font-size: 1em;
+        width: auto;
+        margin: 5% 10%;
+    }
     .button {
         height: 12%;
         width: 100%;
-        font-size: 8px;
+        font-size: 1em;
     }
 
     .FBbutton {
-        height: 8%;
-        font-size: 7px;
-        padding: 0 0;
+        height: 10%;
+        font-size: 1em;
+        padding: 0 20%;
+        margin: 10% -20%;
+    }
+    .login {
+        box-sizing: border-box;
+        width: 60%;
+        height: 500px;
+        padding: 5% 1% 0;
+        margin: auto;
+        float:none;}
+
+    .IDbutton{
+        height: 10%;
+        font-size: 1em;
+        padding: 0 20%;
+        margin: 10% -20%;
+    }
+    .frontbutton {
+        width: 50%;
+        float: none;
+        padding: 3%;
+        margin: 5% 25%;
+        font-size: 1em;
+    }
+    .errorbutton{
+        width:50%;
     }
 
     /*
@@ -279,7 +376,32 @@ body {
 }
 
 label {
-    font: normal 12px courier !important;
+    font: normal 1em courier !important;
 }
 
+input {
+    padding: 0.5em;
+    background: #f5f5f5;
+    float: right;
+    width: 55%;
+    margin-top: -2em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
 
+.regLabel {
+    margin-top: 0.2em;
+    display: block;
+}
+
+.movietable {
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid white;
+}
+
+th, td{
+    border: 1px solid white;
+}
