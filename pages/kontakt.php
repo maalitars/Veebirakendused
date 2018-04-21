@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <?php
-include 'header.php';
-include_once "../pay.php";
+    include_once "../pay.php";
 ?>
-
-<html>
+<html lang="et">
 <head>
     <link href="main2.css" rel="stylesheet" type="text/css"/>
     <title>SeenItAll-Kontakt</title>
@@ -21,10 +19,11 @@ include_once "../pay.php";
     </script>
 </head>
 <body>
-<h1><a href="http://localhost/">Pangalink.net</a></h1>
-<p>Makse teostamise näidisrakendus <strong>"SeenItAll"</strong></p>
+<?php include 'header.php';?>
 
-<div>
+
+<div class="card">
+    <p>Makse teostamise näidisrakendus <strong>"SeenItAll"</strong></p>
     <form method="post" action="http://localhost:3480/banklink/swedbank" id="banklink">
         <!-- include all values as hidden form fields -->
         <?php foreach($fields as $key => $val):?>
@@ -37,13 +36,13 @@ include_once "../pay.php";
 
 
 <?php
-        if(!isset($_GET['payment_action'])){
-            echo"Töötab, kui pangalink.net rakendus arvutis töötab";
-        }elseif ($_GET["payment_action"]=="success") {
-            echo "Annetatud";
-        }elseif ($_GET["payment_action"]=="cancel") {
-            echo "Ei õnnestunud";
-        }
+    if(!isset($_GET['payment_action'])){
+        echo"Töötab, kui pangalink.net rakendus arvutis töötab";
+    }elseif ($_GET["payment_action"]=="success") {
+        echo "Annetatud";
+    }elseif ($_GET["payment_action"]=="cancel") {
+        echo "Ei õnnestunud";
+    }
 ?>
 
 </body>
