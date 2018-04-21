@@ -31,13 +31,15 @@
         <?php endforeach; ?>
         <!-- when the user clicks "Edasi panga lehele" form data is sent to the bank -->
         <button type="submit" form="banklink">Edasi panga lehele</button>
+        <br>
+        <p>Pangalink töötab, kui arvutisse on paigaldatud pangalink.net rakendus</p>
     </form>
 </div>
 
 
 <?php
     if(!isset($_GET['payment_action'])){
-        echo"Töötab, kui pangalink.net rakendus arvutis töötab";
+        //echo"Töötab, kui pangalink.net rakendus arvutis töötab";
     }elseif ($_GET["payment_action"]=="success") {
         echo "Annetatud";
     }elseif ($_GET["payment_action"]=="cancel") {
