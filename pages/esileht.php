@@ -56,7 +56,5 @@
         echo $movie->getTitle() . "<br>";
     }?>
 
-
-<script src="js/main.js"></script>
 </body>
 </html>
