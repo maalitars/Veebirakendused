@@ -16,6 +16,8 @@ if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['
     <title>SeenItAll-Andmed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../datapush/client/client.js"></script>
     <script>
         if (!window.jQuery) {
             var script = document.createElement('script');
@@ -32,18 +34,12 @@ if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['
     <div class="card">
         <h2 itemprop="headline">Profiilipilt</h2>
         <br><br>
-        <?php
-        $result = $mysqli->query("SELECT COUNT(*) as total from users;");
-        $row = mysqli_fetch_assoc($result);
-        $count = $row['total'];
-        echo 'Praegu registreeritud kasutajate arv:  ';
-        echo $count;
-        ?>
+        <p>Praegu registeeritud kasutajate arv: <div id="countOfUsers"></div>
         <br><br>
         <form itemprop="potentialAction" action="upload.php" method="POST" enctype="multipart/form-data">
-            <label for="chooseFile">Vali fail üleslaadimiseks:</label>
+            <label for="fileUpload">Vali fail üleslaadimiseks:</label>
             <br><br>
-            <input name="file" type="file" id="fileUpload"></input>
+            <input name="file" type="file" id="fileUpload">
             <br><br>
             <button type="submit" name="submit">Lae pilt üles</button>
         </form>
@@ -57,7 +53,7 @@ if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['
                 echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='$path' alt='Profile picture' /></div>";
             }
         } else {
-            echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
+            echo "<div id='profileimg2' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
         }
         ?>
         <br><br>

@@ -9,31 +9,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <title>SeenItAll-Filmid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        if (!window.jQuery) {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'js/jquery-3.3.1.min.js';
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(script, firstScript);
-        }
-        $(document).ready(function () {
-            var filmsCount = 2;
-            var filmsAllCount = 2;// limitiga võrdne
-            $("button").click(function () {
-                filmsCount = filmsCount + 2;
-                filmsAllCount = filmsAllCount + 1;//suurendame igal korral
-                $("#filmsTable").load("../morefilms.php", {
-                    filmsNewCount: filmsCount
-                });
-                if(filmsAllCount > filmsCount){
-                    $("button").hide();
-                }
-                filmsAllCount = filmsAllCount + 2;
-            });
-
-        });
-    </script>
+    <script src="../js/filmid.js" rel="script"></script>
 </head>
 <body>
 <?php include 'header.php';
