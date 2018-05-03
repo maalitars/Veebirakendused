@@ -2,6 +2,14 @@
 <?php
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
+    include('tmdb_v3-PHP-API--master/tmdb-api.php');
+
+    // if you have no $conf it uses the default config
+    $tmdb = new TMDB();
+
+    //Insert your API Key of TMDB
+    //Necessary if you use default conf
+    $tmdb->setAPIKey('2db62735185c590d8057361f7a3bf663');
 ?>
 <html lang="et">
 <head>
@@ -14,16 +22,34 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <body>
 <?php include 'header.php';
 ?>
-<div>
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="text-center">Otsi filme</h2>
+        <form id="searchForm">
+            <label class="regLabel" for="searchText">Otsi</label>
+            <input type="text"  id="searchText" name="searchText" placeholder="Otsi filme...">
+        </form>
+    </div>
+
+<?php
+    $title =  $_GET['searchText'];
+    $movies = $tmdb->searchMovie($title);
+foreach($movies as $movie) {
+    echo "<br>";
+    $presen = null;
+    echo $movie->getTitle() . "<br><br>";
+    $presen = 'https://image.tmdb.org/t/p/w200';
+    $presen .= $movie->getPoster();
+    echo "<img class='avatarPicture' src='$presen' alt='Movie poster' />";
+}?>
+</div>
+<!---<div>
+    <br><br>
     <div id="filmsTable">
-        <?php include '../films.php';
-            $result = $mysqli->query("SELECT COUNT(*) as total from Movies;");
-            $row = mysqli_fetch_assoc($result);
-            $count = $row['total'];
-           ?>
     </div>
     <button class="frontbutton" id="filmsbutton">Lae rohkem</button>
-</div>
+
+</div>-->
 <!--<div itemscope itemtype="http://www.schema.org/WebPage">
     <p itemprop="headline">FILMID</p>
 
