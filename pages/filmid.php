@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <?php
-session_start();
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
     include('tmdb_v3-PHP-API--master/tmdb-api.php');
-
-    // if you have no $conf it uses the default config
     $tmdb = new TMDB();
-
-    //Insert your API Key of TMDB
-    //Necessary if you use default conf
     $tmdb->setAPIKey('2db62735185c590d8057361f7a3bf663');
 ?>
 <html lang="et">
@@ -34,15 +27,23 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <?php
     $title =  $_GET['searchText'];
     $movies = $tmdb->searchMovie($title);
+echo "<div>";
 foreach($movies as $movie) {
+    $info = $movie->get();
     echo "<br>";
     $presen = null;
-    echo $movie->getTitle() . "<br><br>";
+    $title = $movie->getTitle();
+    echo "<h3>". $title. "</h3><br>";
     $presen = 'https://image.tmdb.org/t/p/w200';
     $presen .= $movie->getPoster();
+    $raiting = $movie -> getVoteAverage();
+    echo 'Keskmine hinne: ' . $raiting . "<br><br>";
     echo "<img class='avatarPicture' src='$presen' alt='Movie poster' />";
-}?>
+    echo "<br>".'----------------' ."<br><br>";
+}
+echo "</div>";?>
 </div>
+
 <!---<div>
     <br><br>
     <div id="filmsTable">

@@ -25,7 +25,7 @@
 
 <div itemprop="form" class="form">
     <h1 itemprop="headline">Tere tulemast!</h1>
-    <h3 itemprop="text">
+    <h2 itemprop="text">
         <?php
             if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
                 echo $_SESSION['message'];
@@ -33,7 +33,7 @@
                 header("location: login.php");
             endif;
         ?>
-    </h3>
+    </h2>
     <div itemprop="button" class="button" id="centerbutton" onclick='location.href="pages/esileht.php"'>Mine lehele</div>
 </div>
 

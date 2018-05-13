@@ -20,8 +20,13 @@
         header("location: error.php");
 
     } else {
+        $sql = $mysqli->prepare("INSERT INTO users (first_name, last_name, email, password, hash) VALUES
+        (?, ?, ?, ?, ?)");
+       // $sql->bind_param("sss", $first_name, $last_name, $email, $password, $hash);
+        //$sql->execute();
         $sql = "INSERT INTO users (first_name, last_name, email, password, hash) "
             . "VALUES ('$first_name','$last_name','$email','$password', '$hash')";
+    }
 
         // Add user to the database
         if ($mysqli->query($sql)) {
@@ -39,5 +44,5 @@
             $headers = "From: seenitalloffical@gmail.com";
             mail($to, $subject, $message_body, $headers);
             header("location: welcome.php");
-        }
+
     }

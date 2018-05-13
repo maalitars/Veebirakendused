@@ -42,13 +42,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 
 <?php
-    if(!isset($_GET['payment_action'])){
-        //echo"Töötab, kui pangalink.net rakendus arvutis töötab";
-    }elseif ($_GET["payment_action"]=="success") {
-        echo "Annetatud";
-    }elseif ($_GET["payment_action"]=="cancel") {
-        echo "Ei õnnestunud";
-    }
+        if(!isset($_GET['payment_action'])){
+            //echo"Töötab, kui pangalink.net rakendus arvutis töötab";
+        }elseif ($_GET["payment_action"]=="success") {
+            echo "Annetatud";
+        }elseif ($_GET["payment_action"]=="cancel") {
+            echo "Ei õnnestunud";
+        }
 ?>
 
 </body>

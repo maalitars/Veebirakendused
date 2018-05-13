@@ -599,8 +599,7 @@ class TMDB {
 	 */
 	private function _call($action, $appendToResponse = '') {
 
-		$url = self::_API_URL_.$action .'?api_key='. $this->getConfig()->getAPIKey() .'&language='. $this->getConfig()->getLang() .'&append_to_response='. implode(',', (array) $appendToResponse) .'&include_adult='. $this->getConfig()->getAdult();
-
+		$url = self::_API_URL_.$action .'?language=en-US&api_key='. $this->getConfig()->getAPIKey() .'&append_to_response='. implode(',', (array) $appendToResponse);
 		if ($this->getConfig()->getDebug()) {
 			echo '<pre><a href="' . $url . '">check request</a></pre>';
 		}
@@ -610,8 +609,15 @@ class TMDB {
 		curl_setopt($ch, CURLOPT_HEADER, 0);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+        curl_setopt($ch, CURLOPT_ENCODING, "");
+        curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        curl_setopt($ch,  CURLOPT_HTTP_VERSION,CURL_HTTP_VERSION_1_1);
+        curl_setopt($ch,  CURLOPT_CUSTOMREQUEST,"GET");
+        curl_setopt($ch,  CURLOPT_POSTFIELDS, "{}");
 
-		$results = curl_exec($ch);
+
+        $results = curl_exec($ch);
 
 		curl_close($ch);
 

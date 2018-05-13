@@ -23,7 +23,7 @@ session_start();
 <div class="form">
     <div itemscope itemtype="http://schema.org/WebPage">
         <h1 itemprop="headline">Viga</h1>
-        <h3 itemprop="text">
+        <h2 itemprop="text">
             <?php
             if (isset($_SESSION['message']) AND !empty($_SESSION['message'])):
                 echo $_SESSION['message'];
@@ -31,7 +31,7 @@ session_start();
                 header("location: pages/andmed.php");
             endif;
             ?>
-        </h3>
+        </h2>
         <div itemprop="url" class="button" id="centerbutton" onclick='location.href="pages/andmed.php"'>Mine tagasi
         </div>
     </div>

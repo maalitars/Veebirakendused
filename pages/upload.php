@@ -24,6 +24,9 @@ if (isset($_POST['submit'])) {
                 $fileDestination = 'uploads/' . $fileName;
                 move_uploaded_file($fileTmpName, $fileDestination);
                 $sql = "INSERT INTO img (path) VALUES ('$fileDestination')";
+                $pildiid = "SELECT id FROM img WHERE path = ('$fileDestination')";
+                $useremail = $_SESSION["email"];
+                $sql2 = "INSERT INTO users.img_id VALUE $pildiid WHERE users.email = $useremail " ;
                 if ($mysqli->query($sql)) {
                     $sql1 = "SELECT path FROM img order by id desc limit 1";
                 }

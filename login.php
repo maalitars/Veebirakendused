@@ -9,7 +9,7 @@ session_start();
     <link href="pages/main2.css" rel="stylesheet" type="text/css">
     <title>SeenItAll - Logi sisse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         if (!window.jQuery) {
             var script = document.createElement('script');

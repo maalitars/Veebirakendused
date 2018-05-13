@@ -3,12 +3,10 @@
 require_once '../db.php';
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
-
 //autoriseerimata kasutaja ei saa andmed.php lehele ligi
 if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['facebook_id'] == true)){
     header("Location: http://46.101.6.112/");
 }
-
 ?>
 <html lang="et">
 <head>
@@ -50,7 +48,7 @@ if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['
         if ($result1->num_rows > 0) {
             while ($row = $result1->fetch_assoc()) {
                 $path = $row['path'];
-                echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='$path' alt='Profile picture' /></div>";
+                echo "<div id='profileimg' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='$path' alt='$path' /></div>";
             }
         } else {
             echo "<div id='profileimg2' class='avatarPicture'><img itemprop='image' class='avatarPicture' src='uploads/profilesdefault.jpg' alt='Profile picture'/></div>";
@@ -59,6 +57,9 @@ if(($_SESSION['email'] == "") && !($_SESSION['idcard'] == true) && !($_SESSION['
         <br><br>
         <form itemprop="potentialAction" action="deletepic.php" method="POST">
             <button type="submit" name="delete">Eemalda pilt</button>
+        </form>
+        <form itemprop="potentialAction" action="deleteaccount.php" method="POST">
+            <button type="submit" name="delete">Eemalda kasutaja</button>
         </form>
     </div>
 </div>

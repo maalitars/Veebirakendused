@@ -42,7 +42,7 @@
         foreach ($moviespop as $movie123) {
             $presen = null;
             echo '<br>';
-            echo $number . "." . $movie123->getTitle() . "<br>";
+            echo  $number . "." . $movie123->getTitle() . "<br>";
             echo '<br><br>';
             $presenPop = 'https://image.tmdb.org/t/p/w200';
             $presenPop .= $movie123->getPoster();
